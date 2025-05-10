@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+header nav button {
+  @apply py-2 rounded-md  text-base font-semibold;
+}
+.Partner,
+.Partner::-webkit-scrollbar {
+  scrollbar-width: none;
+}
+.Partner img {
+  @apply h-16 w-20;
+}
+.headings {
+  @apply font-semibold text-3xl mb-4  text-[#130741];
+}
+.inputDiv {
+  @apply flex justify-between mt-1 border-b-2 border-[#130741];
+}
+.inputDiv input {
+  @apply grow focus:outline-none;
+}
+.error {
+  @apply text-red-800;
+}
+
+.more1 {
+  @apply text-black  font-bold border-2 border-[#E39400] px-3  hover:bg-[#E39400];
+}
+
+/* .body {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 3fr;
+  gap: 10px;
+} */

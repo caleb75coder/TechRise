@@ -1,0 +1,170 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { Navlist } from "./NavList";
+import Plogo from "/Plogo.jpg";
+import { RiArrowDropDownLine } from "react-icons/ri";
+import { MdMenu } from "react-icons/md";
+import { useLocation } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
+const Header = () => {
+  const [open, setOpen] = useState(false);
+  const handleMenu = () => {
+    setOpen(!open);
+  };
+
+  const navigate = useNavigate();
+  const handleReturn = () => {
+    setTimeout(() => {
+      navigate("/becomeADriver");
+    }, 800);
+  };
+  const handlesign = () => {
+    setTimeout(() => {
+      navigate("signin");
+    }, 800);
+  };
+
+  const handleinvsign = () => {
+    setTimeout(() => {
+      navigate("investorsig");
+    }, 800);
+  };
+
+  const handledrive = () => {
+    setTimeout(() => {
+      navigate("/driversign");
+    }, 800);
+  };
+
+  const handlepass = () => {
+    setTimeout(() => {
+      navigate("/passengersign");
+    }, 800);
+  };
+
+  const [Visible, setVisible] = useState(false);
+  const HandleClick = () => {
+    setVisible(!Visible);
+  };
+
+  const location = useLocation();
+  return (
+    <header className="fixed  top-0 left-0 w-[100%] bg-white z-50">
+      <section className="flex bg-white shadow-md shadow-gray-700 items-center justify-between    text-[#130741] lg:px-5 px-10 py-4 w-[100%] ">
+        <div>
+          <img src={Plogo} />
+        </div>
+        <nav className="lg:flex hidden items-center justify-between  font-mono text-lg gap-5 w-[78%]">
+          {Navlist.map((list) => (
+            <Link
+              key={list.id}
+              to={list.path}
+              className={`${
+                location.pathname === list.path
+                  ? "text-[#E39400]"
+                  : "text-[#130741]"
+              }`}>
+              {list.title}
+            </Link>
+          ))}
+          <div className=" flex flex-col  items-center">
+            <div
+              onClick={HandleClick}
+              className={`bg-white border-[#E39400] text-[#E39400] py-1 border-1  space-x-2 rounded-md px-4 flex items-center `}>
+              <button>More</button>
+              <span>
+                <RiArrowDropDownLine />
+              </span>
+            </div>
+            <div
+              className={`flex flex-col mt-10  fixed rounded-lg px-5   bg-amber-50 opacity-80  space-y-2 transition-all duration-500 ease-in-out overflow-hidden ${
+                Visible ? "max-h-[40vh] py-4 " : "max-h-0"
+              } `}
+              onClick={() => {
+                setVisible(false);
+              }}>
+              <button onClick={handleinvsign} className="more1">
+                investors dashboard
+              </button>
+              <button onClick={handledrive} className="more1">
+                Drivers dashboard
+              </button>
+              <button onClick={handlepass} className="more1">
+                Passengers dashboard
+              </button>
+              <button className="more1">Track your package</button>
+            </div>
+          </div>
+
+          <button
+            onClick={handleReturn}
+            className="bg-white px-2 border-[#E39400] border-1 text-[#E39400]">
+            Become a Driver
+          </button>
+          <button onClick={handlesign} className="bg-[#E39400] text-white px-7">
+            Sign in
+          </button>
+        </nav>
+        <div
+          className="text-3xl lg:hidden block cursor-pointer text-[#E39400]"
+          onClick={handleMenu}>
+          <MdMenu />
+        </div>
+      </section>
+      <section
+        className={`overflow-hidden mt-2 bg-white text-[#E39400] lg:hidden transition-all duration-500 ease-in-out ${
+          open ? "max-h-screen py-4 " : "max-h-0"
+        }`}>
+        <nav className="flex flex-col  space-y-5 min-h-screen px-4 space-x-6  font-mono text-xl w-[100%]">
+          {Navlist.map((list) => (
+            <Link
+              key={list.id}
+              to={list.path}
+              className={`${
+                location.pathname === list.path
+                  ? "text-[#E39400]"
+                  : "text-[#130741]"
+              }`}
+              onClick={() => {
+                setOpen(false);
+              }}>
+              {list.title}
+            </Link>
+          ))}
+          <div className="   py-1 border-1 space-x-4 rounded-md px-4 flex items-center flex-col ">
+            <div
+              onClick={HandleClick}
+              className=" bg-white border-[#E39400] text-[#E39400] py-1 border-1 space-x-4 rounded-md px-4 flex items-center  ">
+              <p>More</p>
+              <span>
+                <RiArrowDropDownLine />
+              </span>
+            </div>
+
+            <div
+              className={`flex flex-col mt-10  fixed z-50 bg-blue-300 opacity-40  space-y-2 transition-all duration-500 ease-in-out overflow-hidden ${
+                Visible ? "max-h-[40vh] py-4 " : "max-h-0"
+              } `}>
+              <button onClick={handleinvsign} className="more1">
+                investors dashboard
+              </button>
+              <button className="more1">Drivers dashboard</button>
+              <button className="more1">Passengers dashboard</button>
+              <button className="more1">Track your package</button>
+            </div>
+          </div>
+          <button className="bg-white  px-2 border-[#E39400] border-1 text-[#E39400] w-[50%]">
+            Become a Driver
+          </button>
+          <button
+            onClick={handleReturn}
+            className="bg-[#E39400] px-14 text-white w-[90%] flex items-center justify-center">
+            Signin
+          </button>
+        </nav>
+      </section>
+    </header>
+  );
+};
+
+export default Header;
