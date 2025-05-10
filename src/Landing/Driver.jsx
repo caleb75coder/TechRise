@@ -24,9 +24,9 @@ const Driver = () => {
         <p className="mb-4">
           Hire our Driver to work for you or to your destination
         </p>
-        <buttonn className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md">
+        <button className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md">
           Learn more
-        </buttonn>
+        </button>
       </section>
 
       <section className="  flex flex-col justify-center items-center px-2 py-2  lg:w-[33%] w-[100%]">
@@ -38,9 +38,9 @@ const Driver = () => {
           It is also a opportunity for and Investment to get good benefits as
           your our App
         </p>
-        <buttonn className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md">
+        <button className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md">
           Learn more
-        </buttonn>
+        </button>
       </section>
     </main>
   );

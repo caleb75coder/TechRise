@@ -55,9 +55,9 @@ const Header = () => {
           <img src={Plogo} />
         </div>
         <nav className="lg:flex hidden items-center justify-between  font-mono text-lg gap-5 w-[78%]">
-          {Navlist.map((list) => (
+          {Navlist.map((list, index) => (
             <Link
-              key={list.id}
+              key={index}
               to={list.path}
               className={`${
                 location.pathname === list.path
@@ -116,9 +116,9 @@ const Header = () => {
           open ? "max-h-screen py-4 " : "max-h-0"
         }`}>
         <nav className="flex flex-col  space-y-5 min-h-screen px-4 space-x-6  font-mono text-xl w-[100%]">
-          {Navlist.map((list) => (
+          {Navlist.map((list, index) => (
             <Link
-              key={list.id}
+              key={index}
               to={list.path}
               className={`${
                 location.pathname === list.path
