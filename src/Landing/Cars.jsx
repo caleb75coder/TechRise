@@ -3,7 +3,7 @@ import Tplan from "/Tplan.jpg";
 
 const Cars = () => {
   return (
-    <main className="w-[100%] lg:flex flex-row flex-col lg:space-x-3 space-y-3  mb-3">
+    <main className="w-[100%] flex lg:flex-row flex-col lg:space-x-3 space-y-3  mb-3">
       <section className="  flex flex-col justify-center items-center px-2 py-2  lg:w-[33%]  w-[100%]">
         <div>
           <img className="asp" src="Tplan.jpg" width={"490px"} />

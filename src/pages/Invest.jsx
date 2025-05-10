@@ -20,7 +20,7 @@ const Invest = () => {
           </p>
         </div>
 
-        <div className="md:flex flex-col flex-row justify-between space-x-2 w-[100%] px-5 pb-15">
+        <div className="md:flex  flex-row justify-between space-x-2 w-[100%] px-5 pb-15">
           <div className=" md:w-[40%] w-[100%]">
             <img src="Toyota.jpg" alt="" />
           </div>
@@ -34,7 +34,7 @@ const Invest = () => {
           </div>
         </div>
 
-        <div className="md:flex flex-col flex-row justify-between space-x-2 space-y-3 w-[100%] px-5 pb-10">
+        <div className="flex flex-col md:flex-row justify-between space-x-2 space-y-3 w-[100%] px-5 pb-10">
           <div className="flex flex-col space-y-2 justify-center items-center  md:w-[60%] w-[100%] ">
             <h1>Exotic Car purches plan for car hiring services</h1>
             <button className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md text-black">

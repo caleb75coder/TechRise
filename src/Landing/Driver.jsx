@@ -2,7 +2,7 @@ import React from "react";
 
 const Driver = () => {
   return (
-    <main className="w-[100%] lg:flex flex-row flex-col lg:space-x-3 space-y-3 ">
+    <main className="w-[100%] lg:flex flex-row  lg:space-x-3 space-y-3 ">
       <section className="  flex flex-col justify-center items-center px-2   lg:w-[33%] w-[100%]">
         <div>
           <img src="Courier.jpg" alt="" />

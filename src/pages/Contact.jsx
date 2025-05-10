@@ -37,7 +37,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="lg:flex w-[100%] justify-around flex-col flex-row py-5 px-2">
+      <section className="lg:flex w-[100%] justify-around  flex-row py-5 px-2">
         <form className="space-y-3 w-[100%]">
           <div className="flex space-x-4">
             <label htmlFor="">Full Name</label>

@@ -1,4 +1,4 @@
-import FeedbackProps from "./FeedbackProps";
+import FeedbackProps from "./Feedbackprops";
 
 export default function Feedback() {
   return (
