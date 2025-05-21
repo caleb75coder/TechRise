@@ -6,14 +6,14 @@ import { FaClock } from "react-icons/fa6";
 
 const Passengerdash = () => {
   return (
-    <main className="w-[100%]">
+    <main className="w-[100%] px-1 lg:px-5 bg-gray-200">
       <h1 className="headings flex justify-center pt-5">Passenger Dashboard</h1>
-      <div className="flex   w-[100%] py-5 text-[#130741] font-medium text-md">
-        <section className="  py- px-5   w-[30%] ">
+      <div className="lg:flex flex-row   w-[100%] py-5 text-[#130741] font-medium text-md">
+        <section className="    lg:w-[30%] w-[100%] ">
           <div className="flex flex-col bg-gray-300  items-center h-full  space-y-5 py-5  w-[100%] ">
             <h1 className="text-xl font-bold">Welcome Back</h1>
             <img
-              className=" rounded-full w-[80%] h-[43vh] "
+              className=" rounded-full w-[80%] lg:h-[35%] h-[300px] "
               src="Pasenger1.jpg"
               alt=""
             />
@@ -22,16 +22,16 @@ const Passengerdash = () => {
           </div>
         </section>
 
-        <div className="flex flex-col  items-center  space-y-5   w-[40%] ">
-          <section className="w-[100%] flex space-x-4 ">
-            <div className="flex flex-col bg-gray-300 w-[50%] px-2 py-3 space-y-2">
+        <div className="flex flex-col  items-center   w-[100%]  lg;w-[40%] ">
+          <section className="w-[100%] lg:flex flex-row   ">
+            <div className="flex flex-col bg-gray-300 lg:w-[50%] w-[100%] px-2 py-3 space-y-2">
               <h1>Next Ride</h1>
               <p>April 26,2025 9:21 AM</p>
               <p>12 Aba Owerri Road</p>
               <p>12 Azikiwe Road Umuahia</p>
             </div>
 
-            <div className="flex flex-col items-center justify-center bg-gray-300 w-[50%]">
+            <div className="flex flex-col items-center justify-center bg-gray-300 w-[100%] lg:w-[50%]">
               <h1>Wallet Balance</h1>
               <p>₦17,000</p>
             </div>
@@ -72,7 +72,7 @@ const Passengerdash = () => {
           </section>
         </div>
 
-        <div className="flex flex-col  items-center space-y-3  px-4 w-[30%] ">
+        <div className="flex flex-col  items-center   lg:px-4  w-[100%] lg:w-[30%] ">
           <div className="w-[100%] bg-gray-300 px-3 py-8">
             <h1 className="font-bold mb-10">Total Riders</h1>
             <div className="flex items-center mb-10 w-[100%] justify-between">
@@ -86,7 +86,7 @@ const Passengerdash = () => {
             </div>
           </div>
 
-          <div className="flex flex-col px-4 bg-gray-300 w-[100%] h-full space-y-15 py-8">
+          <div className="flex flex-col px-4 bg-gray-300 w-[100%] h-full lg:space-y-15 space-y-5 py-8">
             <h1 className="font-bold">Live Tracking</h1>
             <div className="w-[100%] flex justify-center">
               <input

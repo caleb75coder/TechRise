@@ -1,47 +1,156 @@
 import React from "react";
 import Tplan from "/Tplan.jpg";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Cars = () => {
+  const navigate = useNavigate();
+  const handleAirportCity = () => {
+    setTimeout(() => {
+      navigate("/airportLearn");
+    }, 800);
+  };
+
+  const handlecar = () => {
+    setTimeout(() => {
+      navigate("/carLearn");
+    }, 800);
+  };
+
+  const handleinvsign = () => {
+    setTimeout(() => {
+      navigate("invest");
+    }, 800);
+  };
+
+  const handlecourier = () => {
+    setTimeout(() => {
+      navigate("courierLearn");
+    }, 800);
+  };
+
+  const handledrivelearn = () => {
+    setTimeout(() => {
+      navigate("/driverlearn");
+    }, 800);
+  };
   return (
-    <main className="w-[100%] flex lg:flex-row flex-col lg:space-x-3 space-y-3  mb-3">
-      <section className="  flex flex-col justify-center items-center px-2 py-2  lg:w-[33%]  w-[100%]">
+    <main className=" flex lg:flex-row flex-col lg:space-x-3 space-y-3  mb-3  ">
+      <section className="  flex flex-col  items-center px-2 py-2  lg:w-[50%]  w-[100%] ">
         <div>
-          <img className="asp" src="Tplan.jpg" width={"490px"} />
+          <img
+            className="object-cover w-[100vw] h-auto rounded-md transform transition-transform duration-300 hover:scale-105"
+            src="Tplan.jpg"
+          />
         </div>
-        <h1 className="text-2xl font-bold">Airport Trips</h1>
-        <p className="mb-4">
-          Book your stress-free and comfortable trip at an affortable price,
-          with service from our seasined staff today
-        </p>
-        <button className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md">
+        <div className="w-[100%] px-1 flex flex-col justify-center items-center">
+          <h1 className="text-2xl font-bold">Airport Trips</h1>
+          <p className="">Book your stress-free and</p>
+          <p>comfortable trip at an </p>
+          <p>affortable price, with</p>
+          <p>service from our seasined </p>
+          <p>staff today</p>
+        </div>
+        <button
+          onClick={handleAirportCity}
+          className="bg-[#E39400] hover:scale-115  text-sm font-bold py-3 px-5 rounded-md hover:rounded-3xl hover:transition-all duration-300 ease-linear hover:bg-[#E48400] ">
           Learn more
         </button>
       </section>
 
-      <section className="  flex flex-col justify-center items-center px-2 py-2  lg:w-[33%] w-[100%]">
+      <section className="  flex flex-col  items-center px-2 py-2  lg:w-[50%] w-[100%] space-y-1">
         <div>
-          <img src="City.jpg" alt="" />
+          <img
+            className="object-cover w-full h-auto rounded-md transform transition-transform duration-300 hover:scale-105"
+            src="City.jpg"
+            alt=""
+          />
         </div>
         <h1 className="text-2xl font-bold">City Rides</h1>
-        <p className="mb-4">
-          Get around the city at your convenience anytime, anywhere. we are just
-          an order away from you
-        </p>
-        <button className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md">
+        <p className="">Get around the city at your</p>
+        <p>convenience anytime,</p>
+        <p>anywhere. we are just an</p>
+        <p>order away from you</p>
+        <button
+          onClick={handleAirportCity}
+          className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md hover:rounded-3xl hover:transition-all duration-300 hover:scale-110 ease-linear hover:bg-[#E48400]">
           Learn more
         </button>
       </section>
 
-      <section className=" flex flex-col justify-center items-center px-2 py-2  lg:w-[33%] w-[100%]">
+      <section className=" flex flex-col  items-center px-2 py-2  lg:w-[50%] w-[100%] space-y-1">
         <div>
-          <img className="asp" src="Cars.jpg" width={"500px"} alt="" />
+          <img
+            className="object-cover w-[100vw] h-auto rounded-md transform transition-transform duration-300 hover:scale-105"
+            src="Cars.jpg"
+            alt=""
+          />
         </div>
-        <h1 className="text-2xl font-bold">City Rides</h1>
-        <p className="mb-4">
-          Get around the city at your convenience anytime, anywhere. we are just
-          an order away from you
-        </p>
-        <button className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md">
+        <h1 className="text-2xl font-bold">Car Hair</h1>
+        <p className="">Get around the city at your</p>
+        <p>convenience anytime,</p>
+        <p>anywhere. we are just an</p>
+        <p>order away from you</p>
+        <button
+          onClick={handlecar}
+          className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md hover:rounded-3xl hover:transition-all duration-300 hover:scale-110 ease-linear hover:bg-[#E48400]">
+          Learn more
+        </button>
+      </section>
+
+      <section className="  flex flex-col  items-center px-2 py-2  lg:w-[50%] w-[100%] space-y-2">
+        <div>
+          <img
+            className="object-cover w-full h-auto rounded-md transform transition-transform duration-300 hover:scale-105"
+            src="Courier.jpg"
+            alt=""
+          />
+        </div>
+        <h1 className="text-2xl font-bold">Couier Services</h1>
+        <p className="">Intown and intercity courier</p>
+        <p> services with superfast</p>
+        <p className="pb-2"> delivry</p>
+        <button
+          onClick={handlecourier}
+          className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md hover:rounded-3xl hover:transition-all duration-300 hover:scale-110 ease-linear hover:bg-[#E48400]">
+          Learn more
+        </button>
+      </section>
+
+      <section className="  flex flex-col  items-center px-2 py-2  lg:w-[50%] w-[100%] space-y-3">
+        <div>
+          <img
+            className="object-cover w-full h-auto rounded-md transform transition-transform duration-300 hover:scale-105"
+            src="Driver.jpg"
+            alt=""
+          />
+        </div>
+        <h1 className="text-2xl font-bold">Driver Hire</h1>
+        <p className="">Hire our Driver to work for you</p>
+        <p> or to your destination</p>
+        <button
+          onClick={handledrivelearn}
+          className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md hover:rounded-3xl hover:transition-all duration-300 hover:scale-110 ease-linear hover:bg-[#E48400]">
+          Learn more
+        </button>
+      </section>
+
+      <section className="  flex flex-col  items-center px-2 py-2  lg:w-[50%] w-[100%] space-y-1">
+        <div>
+          <img
+            className="object-cover w-full h-auto rounded-md transform transition-transform duration-300 hover:scale-105"
+            src="Invest.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h1 className="text-2xl font-bold">Invest</h1>
+          <p className="mb-4">It is also a opportunity for</p>
+          <p>and Investment to get good</p>
+          <p className="pb-2"> benefits as your our App</p>
+        </div>
+        <button
+          onClick={handleinvsign}
+          className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md hover:rounded-3xl hover:transition-all duration-300 hover:scale-110 ease-linear  hover:bg-[#E48400]">
           Learn more
         </button>
       </section>

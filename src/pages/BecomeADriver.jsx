@@ -24,7 +24,7 @@ const BecomeADriver = () => {
           <h1 className="headings">why Drive with us</h1>
         </div>
 
-        <div className="w-[100%]  lg:flex flex-col flex-row space-y-2 items-center px-5 space-x-2 mb-20">
+        <div className="w-[100%]  lg:flex  flex-row space-y-2 items-center px-5 space-x-2 mb-20">
           <div className=" border-2 border-black lg:w-[33%] w-[100%] flex flex-col  items-center space-y-8 px-1 rounded-2xl">
             <h1 className="text-[#130741] font-bold text-xl">
               Drive and earn when ypu like
@@ -59,7 +59,7 @@ const BecomeADriver = () => {
           <h1 className="headings">Get Started</h1>
         </div>
 
-        <div className="w-[100%]  lg:flex flex-col flex-row space-y-2 items-center justify-between  space-x-10 pb-5">
+        <div className="w-[100%]  lg:flex  flex-row space-y-2 items-center justify-between  space-x-10 pb-5">
           <div className=" lg:w-[30%] w-[100%]  space-y-5 px-1">
             <h1 className="text-[#130741] font-bold text-xl">
               1. Register online

@@ -5,7 +5,7 @@ const Notfound = () => {
   const navigate = useNavigate();
   const handleReturn = () => {
     setTimeout(() => {
-      navigate("/becomeADriver");
+      navigate("/");
     }, 800);
   };
   return (

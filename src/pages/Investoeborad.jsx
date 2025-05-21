@@ -2,13 +2,13 @@ import React from "react";
 
 const Investoeborad = () => {
   return (
-    <main className="">
+    <main className="bg-gray-200">
       <div className="flex justify-center pt-5">
         <h1 className="headings">Investors Dashboard</h1>
       </div>
-      <div className="grid w-[100%] grid-cols-[1fr_4fr] grid-rows-[1fr_4fr] space-x-3 space-y-3 py-5 px-3 text-[#130741]">
-        <aside className=" col-start-1 col-end-2 row-start-1 row-end-4 pt-4">
-          <section className="py-10 bg-gray-300 w-[100%] h-[100vh] ">
+      <div className="lg:grid flex-col w-[100%] grid-cols-[1fr_4fr] grid-rows-[1fr_4fr] space-x-3 space-y-3 py-5 px-3 text-[#130741]">
+        <aside className=" col-start-1 lg:col-end-2 row-start-1 lg:row-end-4 w-[100%] lg:pr-3  pt-4">
+          <section className="py-10 bg-gray-300 w-[100%] lg:h-[100vh] ">
             <div className="flex flex-col justify-center items-center  space-y-5 pt-10 ">
               <h1 className="text-xl font-bold">Welcome Back</h1>
               <img
@@ -23,28 +23,31 @@ const Investoeborad = () => {
           </section>
         </aside>
 
-        <header className=" col-start-1 lg:col-start-2 col-end-3 row-start-1 row-end-2 w-[100%]  flex items-center space-x-4 font-medium">
-          <div className="bg-gray-300 w-[25%] flex flex-col items-center justify-center space-y-5 py-2">
+        <header className=" col-start-1 lg:col-start-2 col-end-3 row-start-1 row-end-2 w-[100%] lg:flex  items-center space-x-2 font-medium">
+          <div className="bg-gray-300 w-[100%] lg:w-[25%] flex flex-col items-center justify-center space-y-5 py-2 ">
             <h1>Total investment value</h1>
             <p>₦20,000,000</p>
           </div>
-          <div className="bg-gray-300 w-[25%] flex flex-col items-center justify-center space-y-5 py-2">
+          <hr />
+          <div className="bg-gray-300 w-[100%] lg:w-[25%] flex flex-col items-center justify-center space-y-5 py-2">
             <h1>Monthly Earning</h1>
             <p>₦600,000</p>
           </div>
-          <div className="bg-gray-300 w-[25%] flex flex-col items-center justify-center space-y-5 py-2">
+          <hr />
+          <div className="bg-gray-300 w-[100%] lg:w-[25%] flex flex-col items-center justify-center space-y-5 py-2">
             <h1>Pending Payment</h1>
             <p>₦200,000</p>
           </div>
-          <div className="bg-gray-300 w-[25%] flex flex-col items-center justify-center space-y-5 py-2">
+          <hr />
+          <div className="bg-gray-300 w-[100%] lg:w-[25%] flex flex-col items-center justify-center space-y-5 py-2">
             <h1>Cars leased</h1>
             <p>3</p>
           </div>
         </header>
 
         <main className=" col-start-1 lg:col-start-2 lg:col-end-3 row-start-2 row-end-4 font-medium">
-          <section className=" flex w-[100%]   space-x-4">
-            <div className=" w-[65%]  space-y-3  font-medium">
+          <section className=" lg:flex flex-row w-[100%]   space-x-4">
+            <div className=" w-[100%] lg:w-[65%]  space-y-3  font-medium">
               <div>
                 <div className="flex flex-col items-center w-[100%] bg-gray-300">
                   <h1 className="text-xl font-bold py-2">
@@ -104,7 +107,7 @@ const Investoeborad = () => {
               </div>
             </div>
 
-            <div className=" w-[35%]   space-y-3">
+            <div className=" w-[100%] lg:w-[35%]   space-y-3">
               <div className=" w-[100%] bg-gray-300 px-5 py-3 space-y-3">
                 <h1 className="text-xl font-bold">Earnings & Payouts</h1>
                 <div className="flex items-center justify-between">

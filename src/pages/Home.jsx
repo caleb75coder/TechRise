@@ -2,7 +2,7 @@ import React from "react";
 import Taxi from "../Landing/Taxi";
 import Best from "../Landing/Best";
 import Cars from "../Landing/Cars";
-import Driver from "../Landing/Driver";
+// import Driver from "../Landing/Driver";
 import Safety from "../Landing/Safety";
 import Partners from "../Landing/Partners";
 import Feedback from "../Landing/Feedback";
@@ -16,7 +16,7 @@ const Home = () => {
 
         <div className=" ">
           <Cars />
-          <Driver />
+          {/* <Driver /> */}
         </div>
         <Safety />
         <Partners />

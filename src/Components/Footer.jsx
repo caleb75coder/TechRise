@@ -10,6 +10,12 @@ function Footer() {
       navigate("/myteam");
     }, 800);
   };
+
+  const handleReg = () => {
+    setTimeout(() => {
+      navigate("/register");
+    });
+  };
   return (
     <main className="bg-[#0f0448]">
       <div className="flex items-center justify-between text-white px-4 w-[100%]">
@@ -17,7 +23,7 @@ function Footer() {
           <div>
             <h1 className="text-[#E39400] text-2xl mb-5">Drive Konacuv</h1>
           </div>
-          <div className="md:flex flex-row flex-col items-center items-cente space-x-50">
+          <div className="lg:flex flex-row  items-center items-cente space-x-50">
             <nav className="flex flex-col text-sm">
               <a href=""> About Drive Konacuv</a>
               <a href="">City ride</a>
@@ -41,14 +47,9 @@ function Footer() {
 
         <section className="flex flex-col space-x-3 w-[60%] px-2 pr-4 py-2">
           <div className=" flex justify-between  space-x-2  py-3">
-            <h1 className="font-bold  text-md">Back to the top</h1>
-            <button
-              onClick={handleteam}
-              className="bg-[#E39400] text-sm font-bold py-3 px-4 rounded-md text-black">
-              My Team
-            </button>
+            <button className="font-bold  text-md">Back to the top</button>
           </div>
-          <div className=" md:flex flex-row flex-col justify-between">
+          <div className=" lg:flex flex-row  justify-between">
             <nav className="flex flex-col text-sm ">
               <a className="font-bold mb-2text-md" href="">
                 Support Resources
@@ -70,7 +71,9 @@ function Footer() {
                 <p className="text-sm">Sign up for our new startter</p>
               </div>
               <div className="pb-5">
-                <button className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md text-black">
+                <button
+                  onClick={handleReg}
+                  className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md text-black hover:transition-all duration-200 ease-linear hover:rounded-3xl hover:bg-[#E39400] hover:text-white">
                   Register
                 </button>
               </div>

@@ -7,12 +7,10 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { NavLink, useNavigate } from "react-router-dom";
 
-export default function Signin() {
+export default function Regdrivsign() {
   const schema = Yup.object().shape({
     username: Yup.string().required("Username is required"),
-    email: Yup.string()
-      .email("Invalid email format")
-      .required("Email is required"),
+
     password: Yup.string()
       .required("Password is required")
       .min(6, "Password must be atleast 6 characters")
@@ -21,10 +19,6 @@ export default function Signin() {
         /[@.,"}{}$#%^&*();:?!<>]/,
         "Password must include a special character"
       ),
-    checkbox: Yup.boolean().oneOf(
-      [true],
-      "You must accept terms and conditions "
-    ),
   });
   const {
     register,
@@ -44,8 +38,8 @@ export default function Signin() {
   const navigate = useNavigate();
   const handlesign = () => {
     setTimeout(() => {
-      navigate("/");
-    });
+      navigate("/driverdash");
+    }, 800);
   };
 
   return (
@@ -53,22 +47,8 @@ export default function Signin() {
       <h1 className=" text-[#130741] text-3xl font-medium mb-8">Welcome!</h1>
       <img src="/Plogo.jpg" alt="logo" />
       <section className="mt-16 text-[#130741]">
-        <h1 className="text-xl mb-4">Sign up</h1>
+        <h1 className="text-xl mb-4">Log in</h1>
         <form className="space-y-5" onSubmit={handleSubmit(submitFn)}>
-          <div>
-            <label>Email</label>
-            <div className="inputDiv">
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                {...register("email")}
-              />
-              <span className="text-2xl">
-                <MdOutlineEmail />
-              </span>
-            </div>
-            <p className="error text-red-700">{errors.email?.message}</p>
-          </div>
           <div>
             <label>Username</label>
             <div className="inputDiv">
@@ -99,39 +79,17 @@ export default function Signin() {
             <p className="error text-red-700">{errors.password?.message}</p>
           </div>
 
-          <div>
-            <label>Confirm Password</label>
-            <div className="inputDiv">
-              <input
-                type={visible ? "text" : "password"}
-                placeholder="Confirm your password"
-                {...register("confirmPassword")}
-              />
-              <span className="text-3xl cursor-pointer" onClick={showPassword}>
-                <IoKey />
-              </span>
-            </div>
-            <p className="error text-red-700">{errors.password?.message}</p>
+          <div className="flex items-center justify-between">
+            <h1>Create account</h1>
+            <h1>Forgot password</h1>
           </div>
 
-          <div>
-            <div className="flex space-x-4">
-              <input
-                type="checkbox"
-                className=" w-5 h-5 "
-                {...register("checkbox")}
-              />
-              <p>I agree to all companies Term and conditions</p>
-            </div>
-            <p className="error text-red-700">{errors.checkbox?.message}</p>
-          </div>
           <div className="flex justify-between mt-14 items-center">
             <button
               onClick={handlesign}
-              className="font-medium px-8 py-3 rounded-md bg-[#E39400] hover:rounded-3xl hover:transition-all duration-300 ease-linear hover:bg-[#E48400]">
-              Sign in
+              className="font-medium px-8 py-3 rounded-md bg-[#E39400]">
+              Log in
             </button>
-            <p>Have an account?</p>
           </div>
         </form>
       </section>

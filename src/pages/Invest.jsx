@@ -27,7 +27,7 @@ const Invest = () => {
 
           <div className="flex flex-col space-y-2 justify-center items-center  md:w-[60%] w-[100%] ">
             <h1>Low budjet car purches plan for taxi</h1>
-            <button className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md text-black">
+            <button className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md text-black  hover:transition-all duration-200 ease-linear hover:rounded-3xl hover:bg-[#E39400] hover:text-white">
               {" "}
               View plan
             </button>
@@ -37,7 +37,7 @@ const Invest = () => {
         <div className="flex flex-col md:flex-row justify-between space-x-2 space-y-3 w-[100%] px-5 pb-10">
           <div className="flex flex-col space-y-2 justify-center items-center  md:w-[60%] w-[100%] ">
             <h1>Exotic Car purches plan for car hiring services</h1>
-            <button className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md text-black">
+            <button className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md text-black  hover:transition-all duration-200 ease-linear hover:rounded-3xl hover:bg-[#E39400] hover:text-white">
               {" "}
               View plan
             </button>

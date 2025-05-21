@@ -2,7 +2,7 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 import Inputprops from "./Taxiprops";
 import { PickupProps } from "./Taxiprops";
 import { FaClock } from "react-icons/fa6";
-export default function Taxi() {
+export default function AirportCityprops() {
   return (
     <>
       <main className="flex flex-col lg:flex-row justify-center gap-6 ">

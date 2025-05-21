@@ -22,18 +22,6 @@ header nav button {
 .error {
   @apply text-red-800;
 }
-
 .more1 {
-  @apply text-black  font-bold border-2 border-[#E39400] px-3  hover:bg-[#E39400];
+  @apply hover:bg-[#E39400] px-2 border-2;
 }
-
-/* .body {
-  background-color: black;
-  width: 100%;
-  height: 100vh;
-  color: white;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 3fr;
-  gap: 10px;
-} */

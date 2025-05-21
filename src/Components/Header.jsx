@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Navlist } from "./NavList";
-import Plogo from "/Plogo.jpg";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { MdMenu } from "react-icons/md";
 import { useLocation } from "react-router-dom";
@@ -42,6 +41,12 @@ const Header = () => {
     }, 800);
   };
 
+  const handletrack = () => {
+    setTimeout(() => {
+      navigate("/trackPackage");
+    }, 800);
+  };
+
   const [Visible, setVisible] = useState(false);
   const HandleClick = () => {
     setVisible(!Visible);
@@ -49,19 +54,19 @@ const Header = () => {
 
   const location = useLocation();
   return (
-    <header className="fixed  top-0 left-0 w-[100%] bg-white z-50">
-      <section className="flex bg-white shadow-md shadow-gray-700 items-center justify-between    text-[#130741] lg:px-5 px-10 py-4 w-[100%] ">
+    <header className="fixed  top-0 left-0 w-[100%] z-50 backdrop-blur-3xl">
+      <section className="flex  shadow-md shadow-gray-700 items-center justify-between    text-[#130741] lg:px-5 px-10 py-4 w-[100%] ">
         <div>
-          <img src={Plogo} />
+          <img src="Kunacuv.png" alt="" />
         </div>
-        <nav className="lg:flex hidden items-center justify-between  font-mono text-lg gap-5 w-[78%]">
+        <nav className="lg:flex hidden items-center justify-between  font-mono text-lg gap-5 w-[78%] ">
           {Navlist.map((list, index) => (
             <Link
               key={index}
               to={list.path}
               className={`${
                 location.pathname === list.path
-                  ? "text-[#E39400]"
+                  ? "text-[#E39400]  border border-[#E39400] px-3 rounded-lg transition-all duration-900  ease-out py-1"
                   : "text-[#130741]"
               }`}>
               {list.title}
@@ -70,14 +75,14 @@ const Header = () => {
           <div className=" flex flex-col  items-center">
             <div
               onClick={HandleClick}
-              className={`bg-white border-[#E39400] text-[#E39400] py-1 border-1  space-x-2 rounded-md px-4 flex items-center `}>
+              className={`   text-[#130741]    space-x-2 rounded-md px-4 flex items-center hover:transition-all duration-500 ease-out hover:bg-[#E39400]  hover:text-white `}>
               <button>More</button>
               <span>
                 <RiArrowDropDownLine />
               </span>
             </div>
             <div
-              className={`flex flex-col mt-10  fixed rounded-lg px-5   bg-amber-50 opacity-80  space-y-2 transition-all duration-500 ease-in-out overflow-hidden ${
+              className={`flex flex-col mt-10  fixed rounded-lg px-5   bg-amber-50 opacity-90  space-y-2 transition-all duration-500 ease-out overflow-hidden ${
                 Visible ? "max-h-[40vh] py-4 " : "max-h-0"
               } `}
               onClick={() => {
@@ -92,16 +97,20 @@ const Header = () => {
               <button onClick={handlepass} className="more1">
                 Passengers dashboard
               </button>
-              <button className="more1">Track your package</button>
+              <button onClick={handletrack} className="more1">
+                Track your package
+              </button>
             </div>
           </div>
 
           <button
             onClick={handleReturn}
-            className="bg-white px-2 border-[#E39400] border-1 text-[#E39400]">
+            className="text-[#130741]  px-2     hover:transition-all duration-500 ease-linear hover:bg-[#E39400] hover:text-white">
             Become a Driver
           </button>
-          <button onClick={handlesign} className="bg-[#E39400] text-white px-7">
+          <button
+            onClick={handlesign}
+            className="bg-[#E39400]  text-white px-7 hover:transition-all duration-500 ease-linear hover:bg-white border   hover:border-[#E39400] hover:text-[#E39400]">
             Sign in
           </button>
         </nav>
@@ -111,11 +120,12 @@ const Header = () => {
           <MdMenu />
         </div>
       </section>
+
       <section
-        className={`overflow-hidden mt-2 bg-white text-[#E39400] lg:hidden transition-all duration-500 ease-in-out ${
+        className={`overflow-hidden mt-2 bg-white  backdrop-blur-4xl text-[#E39400] lg:hidden transition-all duration-500 ease-in-out ${
           open ? "max-h-screen py-4 " : "max-h-0"
         }`}>
-        <nav className="flex flex-col  space-y-5 min-h-screen px-4 space-x-6  font-mono text-xl w-[100%]">
+        <nav className="flex flex-col   min-h-screen px-4  space-y-3 font-mono text-xl w-[100%]">
           {Navlist.map((list, index) => (
             <Link
               key={index}
@@ -131,36 +141,38 @@ const Header = () => {
               {list.title}
             </Link>
           ))}
-          <div className="   py-1 border-1 space-x-4 rounded-md px-4 flex items-center flex-col ">
-            <div
-              onClick={HandleClick}
-              className=" bg-white border-[#E39400] text-[#E39400] py-1 border-1 space-x-4 rounded-md px-4 flex items-center  ">
-              <p>More</p>
-              <span>
-                <RiArrowDropDownLine />
-              </span>
-            </div>
-
-            <div
-              className={`flex flex-col mt-10  fixed z-50 bg-blue-300 opacity-40  space-y-2 transition-all duration-500 ease-in-out overflow-hidden ${
-                Visible ? "max-h-[40vh] py-4 " : "max-h-0"
-              } `}>
-              <button onClick={handleinvsign} className="more1">
-                investors dashboard
-              </button>
-              <button className="more1">Drivers dashboard</button>
-              <button className="more1">Passengers dashboard</button>
-              <button className="more1">Track your package</button>
-            </div>
+          <div
+            className=" flex-col  w-[60%]  text-xl space-y-2"
+            onClick={() => {
+              setOpen(false);
+            }}>
+            <button
+              onClick={handleinvsign}
+              className="text-[#130741]  font-bold ">
+              investors dashboard
+            </button>
+            <button
+              onClick={handledrive}
+              className="text-[#130741]  font-bold ">
+              Drivers dashboard
+            </button>
+            <button onClick={handlepass} className="text-[#130741]  font-bold ">
+              Passengers dashboard
+            </button>
+            <button
+              onClick={handletrack}
+              className="text-[#130741]  font-bold ">
+              Track your package
+            </button>
+            <button onClick={handleReturn} className="text-[#130741] ">
+              Become a Driver
+            </button>
+            <button
+              onClick={handlesign}
+              className="bg-[#E39400] px-14 text-white w-[90%] flex items-center justify-center">
+              Signin
+            </button>
           </div>
-          <button className="bg-white  px-2 border-[#E39400] border-1 text-[#E39400] w-[50%]">
-            Become a Driver
-          </button>
-          <button
-            onClick={handleReturn}
-            className="bg-[#E39400] px-14 text-white w-[90%] flex items-center justify-center">
-            Signin
-          </button>
         </nav>
       </section>
     </header>
