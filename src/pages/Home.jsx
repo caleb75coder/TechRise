@@ -6,6 +6,7 @@ import Cars from "../Landing/Cars";
 import Safety from "../Landing/Safety";
 import Partners from "../Landing/Partners";
 import Feedback from "../Landing/Feedback";
+import Elevate from "../Landing/Elevate";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         <Safety />
         <Partners />
         <Feedback />
+        <Elevate />
       </div>
     </main>
   );

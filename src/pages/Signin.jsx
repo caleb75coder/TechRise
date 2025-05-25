@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { NavLink, useNavigate } from "react-router-dom";
+import { FaGoogle } from "react-icons/fa6";
 
 export default function Signin() {
   const schema = Yup.object().shape({
@@ -39,6 +40,11 @@ export default function Signin() {
   const [visible, setVisible] = useState(false);
   const showPassword = () => {
     setVisible(!visible);
+  };
+
+  const [visiblee, setVisiblee] = useState(false);
+  const seePassword = () => {
+    setVisiblee(!visiblee);
   };
 
   const navigate = useNavigate();
@@ -103,11 +109,11 @@ export default function Signin() {
             <label>Confirm Password</label>
             <div className="inputDiv">
               <input
-                type={visible ? "text" : "password"}
+                type={visiblee ? "text" : "password"}
                 placeholder="Confirm your password"
                 {...register("confirmPassword")}
               />
-              <span className="text-3xl cursor-pointer" onClick={showPassword}>
+              <span className="text-3xl cursor-pointer" onClick={seePassword}>
                 <IoKey />
               </span>
             </div>
@@ -128,12 +134,25 @@ export default function Signin() {
           <div className="flex justify-between mt-14 items-center">
             <button
               onClick={handlesign}
-              className="font-medium px-8 py-3 rounded-md bg-[#E39400] hover:rounded-3xl hover:transition-all duration-300 ease-linear hover:bg-[#E48400]">
+              className="font-medium px-6 py-2 rounded-md bg-[#E39400] hover:rounded-3xl hover:transition-all duration-300 ease-linear hover:bg-[#E48400]">
               Sign in
             </button>
             <p>Have an account?</p>
           </div>
         </form>
+
+        <div className=" flex items-center  justify-between">
+          <div className="flex justify-center items-center py-5 font-bold">
+            <h1>or sign in with</h1>
+          </div>
+
+          <div className=" flex items-center space-x-3 bg-blue-400 text-sm font-bold py-2 px-10 rounded-md text-black hover:transition-all duration-200 ease-linear hover:rounded-3xl hover:bg-[#E39400] hover:text-white">
+            <span className="text-lg text-red-600 ">
+              <FaGoogle />
+            </span>
+            <p>Google</p>
+          </div>
+        </div>
       </section>
         
     </main>

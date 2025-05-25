@@ -21,7 +21,8 @@ import AirportLearn from "./Learnmore/AirportLearn";
 import CourierLearn from "./Learnmore/CourierLearn";
 import CarLearn from "./Learnmore/CarLearn";
 import Driverlearn from "./Learnmore/Driverlearn";
-import Regdrivsign from "./pages/Regdrivsign";
+// import Regdrivsign from "./pages/Regdrivsign";
+import Regthanks from "./pages/Regthanks";
 
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
           <Route path="/investorsig" element={<Investorsig />} />
           <Route path="/investoeborad" element={<Investoeborad />} />
           <Route path="/driversign" element={<Driversign />} />
-          <Route path="regdrivsign" element={<Regdrivsign />} />
+          {/* <Route path="regdrivsign" element={<Regdrivsign />} /> */}
           <Route path="/driverdash" element={<Driverdash />} />
           <Route path="/passengersign" element={<Passengersign />} />
           <Route path="passengerdash" element={<Passengerdash />} />
@@ -48,6 +49,7 @@ function App() {
           <Route path="/courierLearn" element={<CourierLearn />} />
           <Route path="/carLearn" element={<CarLearn />} />
           <Route path="driverlearn" element={<Driverlearn />} />
+          <Route path="regthanks" element={<Regthanks />} />
         </Route>
 
         <Route path="*" element={<Notfound />} />

@@ -14,7 +14,7 @@ const Invest = () => {
             <span className="text-amber-500 font-extrabold">Drive Konacuv</span>
           </h1>
           <p>
-            Are you ready to embark on a journy toward profitable returns? Look
+            Are you ready to em-bark on a journy toward profitable returns? Look
             no further than Drive Kanucuv's Drivers investment plans, tailored
             to suit your financial aspiration and goals
           </p>

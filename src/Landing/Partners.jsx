@@ -7,7 +7,7 @@ const Partners = () => {
         <h1 className="headings ">Our Partners</h1>
         <p className="text-lg ">
           We work hand in hand with leading automative, finance and logistics
-          partner to deliver reliable nd efficient services across rhe country.
+          partner to deliver reliable nd efficient services across the country.
         </p>
       </section>
 

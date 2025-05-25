@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <main className="">
       <Hero />
-      <section className="mx-auto w-[90%]">
+      <section className="mx-auto w-[100%]">
         <Hero2 />
         <ServicesList />
       </section>

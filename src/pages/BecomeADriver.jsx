@@ -1,6 +1,13 @@
 import React from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const BecomeADriver = () => {
+  const navigate = useNavigate();
+  const handleRegisterD = () => {
+    setTimeout(() => {
+      navigate("/register");
+    }, 800);
+  };
   return (
     <div>
       <section className="">
@@ -12,7 +19,7 @@ const BecomeADriver = () => {
           <h1 className="headings">Become a Driver</h1>
           <p>
             Become part of a community of passionate, Driven individuals earning
-            steady income while transfoeming transportation in our cities, As
+            steady income while transforming transportation in our cities, As
             Drive Kunacuv, we're more than a logistics company, we're your
             partner in growth from flexible schedules to guaranteed payouts and
             support a very step of the way, we're here to help you succeed on
@@ -21,17 +28,17 @@ const BecomeADriver = () => {
         </div>
 
         <div className="px-3 flex justify-center my-10">
-          <h1 className="headings">why Drive with us</h1>
+          <h1 className="headings">Why Drive with us</h1>
         </div>
 
         <div className="w-[100%]  lg:flex  flex-row space-y-2 items-center px-5 space-x-2 mb-20">
           <div className=" border-2 border-black lg:w-[33%] w-[100%] flex flex-col  items-center space-y-8 px-1 rounded-2xl">
             <h1 className="text-[#130741] font-bold text-xl">
-              Drive and earn when ypu like
+              Drive and earn when you like
             </h1>
             <p>
-              Earn during everning and weekends, or make more more money by
-              Driving more frequently, it's up to you
+              Earn during everning and weekends, or make more money by Driving
+              more frequently, it's up to you
             </p>
           </div>
 
@@ -84,6 +91,14 @@ const BecomeADriver = () => {
             <h1 className="text-[#130741] font-bold text-xl">3. Get trained</h1>
             <p>Get tranined as a Driver onec you apply to become a Driver</p>
           </div>
+        </div>
+
+        <div className="py-5 px-5">
+          <button
+            onClick={handleRegisterD}
+            className="bg-[#E39400] text-sm font-bold py-2 px-5 rounded-md text-black hover:transition-all duration-200 ease-linear hover:rounded-3xl hover:bg-[#E39400] hover:text-white">
+            Apply Now
+          </button>
         </div>
       </section>
     </div>

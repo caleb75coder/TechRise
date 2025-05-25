@@ -138,7 +138,7 @@ const Cars = () => {
         <div>
           <img
             className="object-cover w-full h-auto rounded-md transform transition-transform duration-300 hover:scale-105"
-            src="Invest.jpg"
+            src="investt.jpg"
             alt=""
           />
         </div>

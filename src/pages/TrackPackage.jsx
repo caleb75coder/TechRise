@@ -28,8 +28,8 @@ const TrackPackage = () => {
           </div>
         </div>
 
-        <div className="w-[100%] lg:w-[50%] ">
-          <img src="Benz.jpg" alt="" />
+        <div className="w-[100%] lg:w-[50%]  flex items-center justify-center ">
+          <img className="w-[100%] rounded-2xl" src="tracking.jpg" alt="" />
         </div>
       </section>
     </div>

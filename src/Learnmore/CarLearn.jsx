@@ -96,23 +96,8 @@ const CarLearn = () => {
         </div>
       </section>
 
-      <section className="  overflow-x-scroll border-3  text-[#130741] px-2 py-2 space-x-2 flex items-center ">
-        <div className="w-[90vw] text-sm">
-          <div className="">
-            <img
-              className=" w-[100%] rounded-lg border-3"
-              src="Benz.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <h1 className="font-medium text-xl">yota</h1>
-            <li>Automatic</li>
-            <li>Air conditioner</li>
-          </div>
-        </div>
-
-        <div className="w-[90vw] text-sm">
+      <section className="  overflow-x-scroll border-3   text-[#130741] px-2 py-2 space-x-2 grid [grid-template-columns:30vw_30vw_30vw_30vw_30vw_30vw_30vw_30vw] items-center ">
+        <div className=" text-sm">
           <div className="">
             <img
               className=" w-[100%] rounded-lg border-3"
@@ -127,7 +112,67 @@ const CarLearn = () => {
           </div>
         </div>
 
-        <div className="w-[90vw] text-sm">
+        <div className=" text-sm">
+          <div className="">
+            <img
+              className=" w-[100%] rounded-lg border-3"
+              src="Benz.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <h1 className="font-medium text-xl">Benz</h1>
+            <li>Automatic</li>
+            <li>Air conditioner</li>
+          </div>
+        </div>
+
+        <div className=" text-sm">
+          <div className="">
+            <img
+              className=" w-[100%] rounded-lg border-3"
+              src="Benz.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <h1 className="font-medium text-xl">BMW</h1>
+            <li>Automatic</li>
+            <li>Air conditioner</li>
+          </div>
+        </div>
+
+        <div className=" text-sm">
+          <div className="">
+            <img
+              className=" w-[100%] rounded-lg border-3"
+              src="Benz.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <h1 className="font-medium text-xl">cls 350</h1>
+            <li>Automatic</li>
+            <li>Air conditioner</li>
+          </div>
+        </div>
+
+        <div className="text-sm">
+          <div className="">
+            <img
+              className=" w-[100%] rounded-lg border-3"
+              src="Benz.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <h1 className="font-medium text-xl">Benz G 63</h1>
+            <li>Automatic</li>
+            <li>Air conditioner</li>
+          </div>
+        </div>
+
+        <div className=" text-sm">
           <div className="">
             <img
               className=" w-[100%] rounded-lg border-3"
@@ -142,7 +187,7 @@ const CarLearn = () => {
           </div>
         </div>
 
-        <div className="w-[90vw] text-sm">
+        <div className=" text-sm">
           <div className="">
             <img
               className=" w-[100%] rounded-lg border-3"
@@ -151,13 +196,13 @@ const CarLearn = () => {
             />
           </div>
           <div>
-            <h1 className="font-medium text-xl">Toyota</h1>
+            <h1 className="font-medium text-xl">Prado</h1>
             <li>Automatic</li>
             <li>Air conditioner</li>
           </div>
         </div>
 
-        <div className="w-[90vw] text-sm">
+        <div className=" text-sm">
           <div className="">
             <img
               className=" w-[100%] rounded-lg border-3"
@@ -166,52 +211,7 @@ const CarLearn = () => {
             />
           </div>
           <div>
-            <h1 className="font-medium text-xl">Toyota</h1>
-            <li>Automatic</li>
-            <li>Air conditioner</li>
-          </div>
-        </div>
-
-        <div className="w-[90vw] text-sm">
-          <div className="">
-            <img
-              className=" w-[100%] rounded-lg border-3"
-              src="Benz.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <h1 className="font-medium text-xl">Toyota</h1>
-            <li>Automatic</li>
-            <li>Air conditioner</li>
-          </div>
-        </div>
-
-        <div className="w-[90vw] text-sm">
-          <div className="">
-            <img
-              className=" w-[100%] rounded-lg border-3"
-              src="Benz.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <h1 className="font-medium text-xl">Toyota</h1>
-            <li>Automatic</li>
-            <li>Air conditioner</li>
-          </div>
-        </div>
-
-        <div className="w-[90vw] text-sm">
-          <div className="">
-            <img
-              className=" w-[100%] rounded-lg border-3"
-              src="Benz.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <h1 className="font-medium text-xl">Toyota</h1>
+            <h1 className="font-medium text-xl">Lexus G500</h1>
             <li>Automatic</li>
             <li>Air conditioner</li>
           </div>

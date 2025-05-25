@@ -5,7 +5,7 @@ const About = () => {
   return (
     <main>
       <section className="text-[rgb(19,7,65)]">
-        <div className="lg:flex flex-col space-y-2 items-center w-[100%] px-4 mb-10 py-2">
+        <div className="lg:flex flex-row space-y-4 items-center w-[100%] px-4 mb-10 pt-5">
           <div className="w-[100%] flex flex-col justify-center items-center ">
             <h1 className="headings">About US</h1>
             <p>
@@ -15,12 +15,12 @@ const About = () => {
               Nigreia. As a trusted an realiable services provider, We
               specialize on car rides in and around the city, airport trips,
               exotic and executive vihicle car hire at affortable price intown
-              an intercity courier services witw super fast delivery. We also
+              an intercity courier services with super fast delivery. We also
               offer our drivers for hire to drive your destination
             </p>
           </div>
           <div>
-            <img src="Hand.jpg" alt="" />
+            <img className=" rounded-2xl" src="Hand.jpg" alt="" />
           </div>
         </div>
 

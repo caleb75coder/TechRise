@@ -55,7 +55,7 @@ const Header = () => {
   const location = useLocation();
   return (
     <header className="fixed  top-0 left-0 w-[100%] z-50 backdrop-blur-3xl">
-      <section className="flex  shadow-md shadow-gray-700 items-center justify-between    text-[#130741] lg:px-5 px-10 py-4 w-[100%] ">
+      <section className="flex  shadow-md shadow-gray-700 items-center justify-between    text-[#130741] lg:px-5 px-5 py-4 w-[100%] ">
         <div>
           <img src="Kunacuv.png" alt="" />
         </div>
@@ -75,7 +75,7 @@ const Header = () => {
           <div className=" flex flex-col  items-center">
             <div
               onClick={HandleClick}
-              className={`   text-[#130741]    space-x-2 rounded-md px-4 flex items-center hover:transition-all duration-500 ease-out hover:bg-[#E39400]  hover:text-white `}>
+              className={`   text-[#130741]    space-x-2 rounded-md px-4 flex items-center hover:transition-all duration-500 ease-linear hover:bg-[#E39400]  hover:text-white `}>
               <button>More</button>
               <span>
                 <RiArrowDropDownLine />
@@ -114,10 +114,20 @@ const Header = () => {
             Sign in
           </button>
         </nav>
-        <div
-          className="text-3xl lg:hidden block cursor-pointer text-[#E39400]"
-          onClick={handleMenu}>
-          <MdMenu />
+
+        <div className="flex items-center justify-between space-x-4">
+          <div className="flex lg:hidden">
+            <button
+              onClick={handlesign}
+              className="bg-[#E39400] px-4 py-1 font-medium rounded-2xl text-white  flex items-center justify-center">
+              Signin
+            </button>
+          </div>
+          <div
+            className="text-3xl lg:hidden block cursor-pointer text-[#E39400]"
+            onClick={handleMenu}>
+            <MdMenu />
+          </div>
         </div>
       </section>
 
@@ -142,7 +152,7 @@ const Header = () => {
             </Link>
           ))}
           <div
-            className=" flex-col  w-[60%]  text-xl space-y-2"
+            className=" flex-col flex items-start  w-[70%]  text-xl space-y-2"
             onClick={() => {
               setOpen(false);
             }}>
@@ -167,11 +177,11 @@ const Header = () => {
             <button onClick={handleReturn} className="text-[#130741] ">
               Become a Driver
             </button>
-            <button
+            {/* <button
               onClick={handlesign}
               className="bg-[#E39400] px-14 text-white w-[90%] flex items-center justify-center">
               Signin
-            </button>
+            </button> */}
           </div>
         </nav>
       </section>
