@@ -5,7 +5,7 @@ import { FaClock } from "react-icons/fa6";
 export default function AirportCityprops() {
   return (
     <>
-      <main className="flex flex-col lg:flex-row justify-center gap-6 ">
+      <main className="flex flex-col lg:flex-row justify-center gap-6 w-[100%] ">
         <section className="flex flex-col justify-center items-center lg:w-[50%] w-[100%] bg-white ">
           <h1 className="text-3xl font-bold text-[#130741] mb-1">
             Book Your Trip Now

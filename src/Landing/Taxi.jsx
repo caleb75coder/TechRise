@@ -2,7 +2,15 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 import Inputprops from "./Taxiprops";
 import { PickupProps } from "./Taxiprops";
 import { FaClock } from "react-icons/fa6";
+import { Navigate, useNavigate } from "react-router-dom";
 export default function Taxi() {
+  const navigate = useNavigate();
+
+  const handleBookNaw = () => {
+    setTimeout(() => {
+      navigate("/login");
+    }, 800);
+  };
   return (
     <>
       <main className="flex flex-col lg:flex-row justify-center gap-6 ">
@@ -25,13 +33,15 @@ export default function Taxi() {
               <PickupProps text="time" icon={<FaClock />} time="01:50 PM" />
             </div>
             <div>
-              <button className="bg-[#E39400] text-sm font-bold py-3 px-16 rounded-md hover:rounded-3xl hover:transition-all duration-200 ease-linear hover:bg-[#E48400]">
+              <button
+                onClick={handleBookNaw}
+                className="bg-[#E39400] text-sm font-bold py-3 px-16 rounded-md hover:rounded-3xl hover:transition-all duration-200 ease-linear hover:bg-[#E48400]">
                 Book Now
               </button>
             </div>
           </form>
         </section>
-        <section className="lg:w-[50%] w-[100%] min-h-[100%] ">
+        <section className="lg:w-[50%] w-[100%] min-h-[100%] pb-5">
           <img
             src="/Taxi.jpg"
             width={"100%"}

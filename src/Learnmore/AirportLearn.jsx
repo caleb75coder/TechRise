@@ -4,7 +4,7 @@ import Taxi from "../Landing/Taxi";
 
 const AirportLearn = () => {
   return (
-    <main className="px-10">
+    <main className="md:px-10 px-2">
       <section>
         <div className="space-y-3 py-10">
           <h1 className="headings">

@@ -4,7 +4,7 @@ const TrackPackage = () => {
   return (
     <div>
       <section className="text-[#130741] lg:flex flex-row justify-between  w-[100%] py-10 px-2 lg:px-10 space-y-10 space-x-2">
-        <div className=" w-[100%] lg:w-[50%]   px-2">
+        <div className=" w-[100%] lg:w-[50%]  ">
           <div className=" flex flex-col justify-center items-center">
             <h1 className="font-semibold text-3xl   text-[#130741]">
               Track your Package

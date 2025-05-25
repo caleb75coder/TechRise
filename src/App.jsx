@@ -2,6 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Structure from "./Components/Structure";
 import Signin from "./pages/Signin";
+import Login from "./pages/Login";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -36,6 +37,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/becomeADriver" element={<BecomeADriver />} />
           <Route path="/signin" element={<Signin />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/investorsig" element={<Investorsig />} />
           <Route path="/investoeborad" element={<Investoeborad />} />
           <Route path="/driversign" element={<Driversign />} />

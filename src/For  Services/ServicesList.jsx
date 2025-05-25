@@ -9,7 +9,7 @@ const ServicesList = () => {
       {List.map((li, index) => (
         <section
           key={index}
-          className=" text-[rgb(19,7,65)] text-lg md:flex flex-row space-x-5 space-y-5 px-2  ">
+          className=" text-[rgb(19,7,65)] text-md md:flex flex-row space-x-5 space-y-5 px-2  ">
           <div className="md:w-[60%] w-[100%] flex flex-col justify-center items-center">
             <h1 className="text-2xl font-medium mb-1 pr-2">
               {` ${li.title}  `}

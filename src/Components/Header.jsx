@@ -111,7 +111,7 @@ const Header = () => {
           <button
             onClick={handlesign}
             className="bg-[#E39400]  text-white px-7 hover:transition-all duration-500 ease-linear hover:bg-white border   hover:border-[#E39400] hover:text-[#E39400]">
-            Sign in
+            Sign up
           </button>
         </nav>
 
@@ -120,7 +120,7 @@ const Header = () => {
             <button
               onClick={handlesign}
               className="bg-[#E39400] px-4 py-1 font-medium rounded-2xl text-white  flex items-center justify-center">
-              Signin
+              Sign up
             </button>
           </div>
           <div

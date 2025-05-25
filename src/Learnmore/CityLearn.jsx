@@ -2,7 +2,7 @@ import React from "react";
 
 export const CityLearn = () => {
   return (
-    <main className="px-10">
+    <main className="md:px-10 px-2">
       <section>
         <div>
           <h1 className="headings">
