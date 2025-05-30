@@ -5,12 +5,10 @@ import { FaClock } from "react-icons/fa6";
 import { Navigate, useNavigate } from "react-router-dom";
 export default function Taxi() {
   const navigate = useNavigate();
-
   const handleBookNaw = () => {
-    setTimeout(() => {
-      navigate("/login");
-    }, 800);
+    navigate("/login");
   };
+
   return (
     <>
       <main className="flex flex-col lg:flex-row justify-center gap-6 ">

@@ -24,6 +24,8 @@ import CarLearn from "./Learnmore/CarLearn";
 import Driverlearn from "./Learnmore/Driverlearn";
 // import Regdrivsign from "./pages/Regdrivsign";
 import Regthanks from "./pages/Regthanks";
+import BookARide from "./pages/BookARide";
+import YourRide from "./pages/YourRide";
 
 function App() {
   return (
@@ -50,8 +52,10 @@ function App() {
           <Route path="/airportLearn" element={<AirportLearn />} />
           <Route path="/courierLearn" element={<CourierLearn />} />
           <Route path="/carLearn" element={<CarLearn />} />
-          <Route path="driverlearn" element={<Driverlearn />} />
-          <Route path="regthanks" element={<Regthanks />} />
+          <Route path="/driverlearn" element={<Driverlearn />} />
+          <Route path="/regthanks" element={<Regthanks />} />
+          <Route path="bookARide" element={<BookARide />} />
+          <Route path="/yourRide" element={<YourRide />} />
         </Route>
 
         <Route path="*" element={<Notfound />} />
