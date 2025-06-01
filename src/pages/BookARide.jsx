@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
+import { PiCarProfileThin } from "react-icons/pi";
 import { Navigate, useNavigate } from "react-router-dom";
 const BookARide = () => {
   const navigate = useNavigate();
@@ -47,7 +48,9 @@ const BookARide = () => {
 
         <section>
           <div className="flex items-center justify-around text-xl font-bold mb-5">
-            <span>jdosak</span>
+            <span className="text-7xl font-bold text-amber-600">
+              <PiCarProfileThin />
+            </span>
             <h1>15 mins</h1>
             <h1>$75</h1>
           </div>
