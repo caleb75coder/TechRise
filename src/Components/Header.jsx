@@ -54,7 +54,7 @@ const Header = () => {
 
   const location = useLocation();
   return (
-    <header className="fixed  top-0 left-0 w-[100%] z-50 backdrop-blur-3xl">
+    <header className="fixed  top-0 left-0 w-[100%] z-50 bg-white">
       <section className="flex  shadow-md shadow-gray-700 items-center justify-between    text-[#130741] lg:px-5 px-5 py-4 w-[100%] ">
         <div>
           <img src="Kunacuv.png" alt="" />

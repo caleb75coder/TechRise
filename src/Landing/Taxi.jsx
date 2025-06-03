@@ -6,7 +6,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 export default function Taxi() {
   const navigate = useNavigate();
   const handleBookNaw = () => {
-    navigate("/login");
+    navigate("/bookARide");
   };
 
   return (

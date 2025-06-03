@@ -29,6 +29,9 @@ export default function Investorsig() {
   const submitFn = (data) => {
     console.log(data);
     reset();
+    setTimeout(() => {
+      navigate("/investoeborad");
+    }, 900);
   };
   const [visible, setVisible] = useState(false);
   const showPassword = () => {
@@ -36,11 +39,6 @@ export default function Investorsig() {
   };
 
   const navigate = useNavigate();
-  const handlesign = () => {
-    setTimeout(() => {
-      navigate("/investoeborad");
-    }, 800);
-  };
 
   return (
     <main className="mx-auto md:w-[30%] w-[80%]  my-[5%]">
@@ -86,7 +84,7 @@ export default function Investorsig() {
 
           <div className="flex justify-between mt-14 items-center">
             <button
-              onClick={handlesign}
+              // onClick={handlesign}
               className="font-medium px-8 py-3 rounded-md bg-[#E39400]">
               Log in
             </button>

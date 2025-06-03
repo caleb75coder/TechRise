@@ -29,6 +29,9 @@ export default function Passengersign() {
   const submitFn = (data) => {
     console.log(data);
     reset();
+    setTimeout(() => {
+      navigate("/passengerdash");
+    }, 900);
   };
   const [visible, setVisible] = useState(false);
   const showPassword = () => {
@@ -36,14 +39,6 @@ export default function Passengersign() {
   };
 
   const navigate = useNavigate();
-
-  const handlesign = () => {
-    if (errors.username || errors.password) return;
-
-    setTimeout(() => {
-      navigate("/passengerdash");
-    }, 800);
-  };
 
   return (
     <main className="mx-auto md:w-[30%] w-[80%]  my-[5%]">
@@ -89,7 +84,7 @@ export default function Passengersign() {
 
           <div className="flex justify-between mt-14 items-center">
             <button
-              onClick={handlesign}
+              // onClick={handlesign}
               className="font-medium px-8 py-3 rounded-md bg-[#E39400]">
               Log in
             </button>

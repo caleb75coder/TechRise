@@ -34,21 +34,20 @@ const Cars = () => {
     }, 800);
   };
   return (
-    <main className=" flex lg:flex-row flex-col lg:space-x-3 space-y-3  mb-3  ">
-      <section className="  flex flex-col  items-center px-2 py-2  lg:w-[50%]  w-[100%] ">
+    <main className=" scroll bg-gray-100  overflow-x-scroll   text-[#130741] px- py-2 space-x-2 grid md:[grid-template-columns:30vw_30vw_30vw_30vw_30vw_30vw]  [grid-template-columns:85vw_85vw_85vw_85vw_85vw_85vw] items-center ">
+      <section className="  flex flex-col  items-center px-2 py-2 ">
         <div>
           <img
             className="object-cover w-[100vw] h-auto rounded-md transform transition-transform duration-300 hover:scale-105"
             src="Tplan.jpg"
           />
         </div>
-        <div className="w-[100%] px-1 flex flex-col justify-center items-center">
+        <div className=" px-1 flex flex-col justify-center items-center">
           <h1 className="text-2xl font-bold">Airport Trips</h1>
-          <p className="">Book your stress-free and</p>
-          <p>comfortable trip at an </p>
-          <p>affortable price, with</p>
-          <p>service from our seasined </p>
-          <p>staff today</p>
+          <p className="">
+            Book your stress-free and comfortable trip at an affortable price,
+            with service from our seasined staff today
+          </p>
         </div>
         <button
           onClick={handleAirportCity}
@@ -57,7 +56,7 @@ const Cars = () => {
         </button>
       </section>
 
-      <section className="  flex flex-col  items-center px-2 py-2  lg:w-[50%] w-[100%] space-y-1">
+      <section className="  flex flex-col  items-center px-2 py-2   space-y-1">
         <div>
           <img
             className="object-cover w-full h-auto rounded-md transform transition-transform duration-300 hover:scale-105"
@@ -66,10 +65,10 @@ const Cars = () => {
           />
         </div>
         <h1 className="text-2xl font-bold">City Rides</h1>
-        <p className="">Get around the city at your</p>
-        <p>convenience anytime,</p>
-        <p>anywhere. we are just an</p>
-        <p>order away from you</p>
+        <p className="">
+          Get around the city at your convenience anytime anywhere. we are just
+          an order away from you{" "}
+        </p>
         <button
           onClick={handleAirportCity}
           className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md hover:rounded-3xl hover:transition-all duration-300 hover:scale-110 ease-linear hover:bg-[#E48400]">
@@ -77,19 +76,19 @@ const Cars = () => {
         </button>
       </section>
 
-      <section className=" flex flex-col  items-center px-2 py-2  lg:w-[50%] w-[100%] space-y-1">
+      <section className=" flex flex-col  items-center px-2 py-2   space-y-1">
         <div>
           <img
-            className="object-cover w-[100vw] h-auto rounded-md transform transition-transform duration-300 hover:scale-105"
+            className="object-cover w-[100%] lg:h-[50vh] md:h-[16vh] h-[30vh]  rounded-md transform transition-transform duration-300 hover:scale-105"
             src="Cars.jpg"
             alt=""
           />
         </div>
         <h1 className="text-2xl font-bold">Car Hair</h1>
-        <p className="">Get around the city at your</p>
-        <p>convenience anytime,</p>
-        <p>anywhere. we are just an</p>
-        <p>order away from you</p>
+        <p className="">
+          Get around the city at your convenience anytime, anywhere. we are just
+          an order away from you
+        </p>
         <button
           onClick={handlecar}
           className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md hover:rounded-3xl hover:transition-all duration-300 hover:scale-110 ease-linear hover:bg-[#E48400]">
@@ -97,7 +96,7 @@ const Cars = () => {
         </button>
       </section>
 
-      <section className="  flex flex-col  items-center px-2 py-2  lg:w-[50%] w-[100%] space-y-2">
+      <section className="  flex flex-col  items-center px-2 py-2   space-y-2">
         <div>
           <img
             className="object-cover w-full h-auto rounded-md transform transition-transform duration-300 hover:scale-105"
@@ -106,9 +105,9 @@ const Cars = () => {
           />
         </div>
         <h1 className="text-2xl font-bold">Couier Services</h1>
-        <p className="">Intown and intercity courier</p>
-        <p> services with superfast</p>
-        <p className="pb-2"> delivry</p>
+        <p className="">
+          Intown and intercity courier services with superfast delivry
+        </p>
         <button
           onClick={handlecourier}
           className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md hover:rounded-3xl hover:transition-all duration-300 hover:scale-110 ease-linear hover:bg-[#E48400]">
@@ -116,7 +115,7 @@ const Cars = () => {
         </button>
       </section>
 
-      <section className="  flex flex-col  items-center px-2 py-2  lg:w-[50%] w-[100%] space-y-3">
+      <section className="  flex flex-col  items-center px-2 py-2   space-y-3">
         <div>
           <img
             className="object-cover w-full h-auto rounded-md transform transition-transform duration-300 hover:scale-105"
@@ -125,8 +124,9 @@ const Cars = () => {
           />
         </div>
         <h1 className="text-2xl font-bold">Driver Hire</h1>
-        <p className="">Hire our Driver to work for you</p>
-        <p> or to your destination</p>
+        <p className="">
+          Hire our Driver to work for you or to your destination
+        </p>
         <button
           onClick={handledrivelearn}
           className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md hover:rounded-3xl hover:transition-all duration-300 hover:scale-110 ease-linear hover:bg-[#E48400]">
@@ -134,20 +134,20 @@ const Cars = () => {
         </button>
       </section>
 
-      <section className="  flex flex-col  items-center px-2 py-2  lg:w-[50%] w-[100%] space-y-1">
+      <section className="  flex flex-col  items-center px-2 py-2   space-y-1">
         <div>
           <img
             className="object-cover w-full h-auto rounded-md transform transition-transform duration-300 hover:scale-105"
-            src="investt.jpg"
+            src="Invest.jpg"
             alt=""
           />
         </div>
-        <div>
-          <h1 className="text-2xl font-bold">Invest</h1>
-          <p className="mb-4">It is also a opportunity for</p>
-          <p>and Investment to get good</p>
-          <p className="pb-2"> benefits as your our App</p>
-        </div>
+
+        <h1 className="text-2xl font-bold">Invest</h1>
+        <p className="mb-4">
+          It is also a opportunity for and Investment to get good benefits as
+          your our App
+        </p>
         <button
           onClick={handleinvsign}
           className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md hover:rounded-3xl hover:transition-all duration-300 hover:scale-110 ease-linear  hover:bg-[#E48400]">

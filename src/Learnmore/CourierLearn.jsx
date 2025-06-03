@@ -14,26 +14,26 @@ const CourierLearn = () => {
       <section className="p">
         <div className="w-[100%] bg-[url('./Carfair.jpg')]  bg-no-repeat  bg-cover py-3 ">
           <div className=" lg:w-[50%]   backdrop-blur-xl flex flex-col justify-center items-center space-y-10 py-10 px-1 lg:mx-5 mx-2 my-5 rounded-2xl ">
-            <div className=" w-[100%] lg:w-[90%] bg-gray-300 flex flex-col rounded-md px-2 py-2  text-[#130741] text-lg font-medium">
+            <div className=" w-[100%] lg:w-[90%] bg-gray-300 flex flex-col rounded-2xl px-2 py-2   text-[#130741] text-lg font-medium">
               <label htmlFor="">Where to pick</label>
               <input
-                className="py-2 px-2"
+                className="py-1 px-2 grow focus:outline-none"
                 type="text"
                 placeholder="Address, airport, hotel......"
               />
             </div>
 
-            <div className="w-[100%] lg:w-[90%] bg-gray-300 flex flex-col rounded-md px-2 py-2  text-[#130741] text-lg font-medium">
+            <div className="w-[100%] lg:w-[90%] bg-gray-300 flex flex-col rounded-2xl px-2 py-2 text-[#130741] text-lg font-medium">
               <label htmlFor="">Where to Deliver</label>
               <input
-                className="py-2 px-2"
+                className="py-1 px-2 grow focus:outline-none"
                 type="text"
                 placeholder="Address, airport, hotel......"
               />
             </div>
 
             <div className="flex w-[100%] lg:w-[90%] justify-between items-center">
-              <div className="w-[45%] bg-gray-300 flex flex-col rounded-md px-2 py-2  text-[#130741]  font-medium">
+              <div className="w-[45%] bg-gray-300 flex flex-col rounded-md px-2 py-1  text-[#130741]  font-medium">
                 <h1 className="text-lg font-medium  flex justify-center">
                   Pickup date
                 </h1>
@@ -42,7 +42,7 @@ const CourierLearn = () => {
                 </p>
               </div>
 
-              <div className="w-[45%] bg-gray-300 flex flex-col rounded-md px-2 py-2  text-[#130741] font-medium">
+              <div className="w-[45%] bg-gray-300 flex flex-col rounded-md px-2 py-1  text-[#130741] font-medium">
                 <h1 className="text-lg font-medium  flex justify-center">
                   Pickup Time
                 </h1>
@@ -60,44 +60,41 @@ const CourierLearn = () => {
           </div>
         </div>
 
-        <div className="py-5 w-[100%] font-medium justify-center flex flex-col items-center text-[#130741] space-y-5 space-x-2 px-1">
+        <div className="py-5 w-[100%] font-medium justify-center flex flex-col items-center text-[#130741] space-y-5 space-x-2 px-2">
           <h1 className="headings justify-center flex">We Deliver For</h1>
-          <div className="flex justify-evenly  w-[100%] ">
-            <h1 className="py-3 px-5 bg-gray-300 rounded-xl items-center flex">
+          <div className="lg:flex flex-row justify-evenly items-center w-[100%]  space-y-2">
+            <h1 className="py-3 px-5 bg-gray-300 rounded-xl justify-center items-center flex">
               Online Store
             </h1>
-            <h1 className="py-3 px-5 bg-gray-300 rounded-xl items-center flex">
-              Restaurants and grocery stores
-            </h1>
-            <h1 className="py-5 px-5 bg-gray-300 rounded-xl items-center flex">
+            <h1 className="py-3 px-5 bg-gray-300 rounded-xl justify-center items-center flex">
               Flower & gift stores
             </h1>
-          </div>
-
-          <div className="flex justify-evenly  w-[90%] ">
-            <h1 className="py-3 px-5 bg-gray-300 rounded-xl items-center flex">
+            <h1 className="py-3 px-5 bg-gray-300 rounded-xl justify-center items-center flex">
+              Restaurants and grocery stores
+            </h1>
+            <h1 className="py-3 px-5 bg-gray-300 rounded-xl  justify-center items-center flex">
+              And more
+            </h1>
+            <h1 className="py-3 px-5 bg-gray-300 rounded-xl  justify-center items-center flex">
               pet suppliers
             </h1>
-            <h1 className="py-3 px-5 bg-gray-300 rounded-xl items-center flex">
+            <h1 className="py-3 px-5 bg-gray-300 rounded-xl  justify-center items-center flex">
               Auto parts retailers
-            </h1>
-            <h1 className="py-5 px-5 bg-gray-300 rounded-xl items-center flex">
-              And more
             </h1>
           </div>
         </div>
 
-        <div className="py-5 w-[100%] font-medium justify-center flex flex-col items-center text-[#130741] space-y-5 space-x-2 px-1">
+        <div className="py-5 w-[100%] font-medium justify-center flex flex-col items-center text-[#130741] space-y-5 space-x-2 px-2">
           <h1 className="headings justify-center flex">How does it work</h1>
-          <div className="md:flex flex-row justify-evenly  w-[100%]  space-x-4  px-5">
-            <h1 className="py-3 px-5  rounded-xl items-center md:justify-center flex w-[100%] md:w-[33%]  ">
-              sign up and order for courier via our web or App
+          <div className="md:flex flex-row justify-evenly  w-[100%]  space-x-4  ">
+            <h1 className="py-3   rounded-xl items-center md:justify-center flex w-[100%] md:w-[33%]  ">
+              Sign up and order for courier via our web or App
             </h1>
-            <h1 className="py-3 px-5  rounded-xl items-center md:justify-center flex w-[100%] md:w-[33%]  ">
-              Plan yourdelivery & make payment
+            <h1 className="py-3   rounded-xl items-center md:justify-center flex w-[100%] md:w-[33%]  ">
+              Plan your delivery & make payment
             </h1>
-            <h1 className="py-5 px-5  rounded-xl items-center   flex w-[100%] md:w-[33%] ">
-              see where your courier is, track your parcels live status and know
+            <h1 className="py-3  rounded-xl items-center   flex w-[100%] md:w-[33%] ">
+              See where your courier is, track your parcels live status and know
               its delivered
             </h1>
           </div>
@@ -111,11 +108,11 @@ const CourierLearn = () => {
           </h1>
         </div>
 
-        <div className="space-y-1 text-black font">
+        <div className="space-y-1 px-1 text-black font mb-5">
           {CourierFAQ.map((anyname, index) => (
             <div className="text-black font-medium">
               <div
-                className="flex justify-between px-4 py-3 bg-gray-200  mb-0.5 cursor-pointer"
+                className="flex justify-between items-center  px-2 py-3 space-x-2 bg-gray-300  mb-0.5 cursor-pointer"
                 onClick={() => handlecClick(index)}>
                 <p>{anyname.question}</p>
                 <span className="text-xl">
@@ -124,7 +121,7 @@ const CourierLearn = () => {
               </div>
 
               {isOpen === index && (
-                <div className="px-2 py-5 bg-gray-300 text-sm">
+                <div className="px-2 py-5 bg-gray-200 text-sm">
                   {anyname.answer}
                 </div>
               )}

@@ -25,3 +25,7 @@ header nav button {
 .more1 {
   @apply hover:bg-[#E39400] px-2 border-2;
 }
+
+.scroll {
+  scrollbar-width: none;
+}

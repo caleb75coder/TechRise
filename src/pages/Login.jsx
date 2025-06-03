@@ -29,6 +29,9 @@ export default function Login() {
   const submitFn = (data) => {
     console.log(data);
     reset();
+    setTimeout(() => {
+      navigate("/");
+    }, 900);
   };
   const [visible, setVisible] = useState(false);
   const showPassword = () => {
@@ -36,10 +39,10 @@ export default function Login() {
   };
 
   const navigate = useNavigate();
-  const handlesign = () => {
+  const handleCreate = () => {
     setTimeout(() => {
-      navigate("/bookARide");
-    }, 800);
+      navigate("/signin");
+    }, 900);
   };
 
   return (
@@ -80,13 +83,15 @@ export default function Login() {
           </div>
 
           <div className="flex items-center justify-between">
-            <h1>Create account</h1>
-            <h1>Forgot password</h1>
+            <h1 onClick={handleCreate} className="cursor-default">
+              Create account
+            </h1>
+            <h1 className="cursor-default">Forgot password</h1>
           </div>
 
           <div className="flex justify-between mt-14 items-center">
             <button
-              onClick={handlesign}
+              // onClick={handlesign}
               className="font-medium px-8 py-3 rounded-md bg-[#E39400]">
               Log in
             </button>

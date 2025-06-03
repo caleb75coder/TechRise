@@ -25,7 +25,7 @@ export const List = [
   },
   {
     title: "Fast & Reliable",
-    span: "Courier Services",
+    span: "Couier Services",
     text: "We understand the importance of fast and secure deliveries. Our intown and intercity smart, fast, and reliable courier service ensures your packages, documents, and parcels reach their destination on time and in perfect condition. Whether it's an urgent business document, a fragile package, we provide real-time tracking, safe handling, and efficient delivery. Trust us to move your parcels with care and speed.",
     img: "/Courier.jpg",
     button: "Try Now",

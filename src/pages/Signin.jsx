@@ -27,6 +27,7 @@ export default function Signin() {
       "You must accept terms and conditions "
     ),
   });
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -36,7 +37,11 @@ export default function Signin() {
   const submitFn = (data) => {
     console.log(data);
     reset();
+    setTimeout(() => {
+      navigate("/login");
+    }, 900);
   };
+
   const [visible, setVisible] = useState(false);
   const showPassword = () => {
     setVisible(!visible);
@@ -47,11 +52,10 @@ export default function Signin() {
     setVisiblee(!visiblee);
   };
 
-  const navigate = useNavigate();
-  const handlesign = () => {
+  const handlehave = () => {
     setTimeout(() => {
-      navigate("/");
-    });
+      navigate("/login");
+    }, 900);
   };
 
   return (
@@ -133,17 +137,19 @@ export default function Signin() {
           </div>
           <div className="flex justify-between mt-14 items-center">
             <button
-              onClick={handlesign}
+              // onClick={handlesign}
               className="font-medium px-6 py-2 rounded-md bg-[#E39400] hover:rounded-3xl hover:transition-all duration-300 ease-linear hover:bg-[#E48400]">
-              Sign in
+              Sign up
             </button>
-            <p>Have an account?</p>
+            <h1 onClick={handlehave} className="cursor-default">
+              Have an account?
+            </h1>
           </div>
         </form>
 
         <div className=" flex items-center  justify-between">
           <div className="flex justify-center items-center py-5 font-bold">
-            <h1>or sign in with</h1>
+            <h1 className="cursor-default">or sign in with</h1>
           </div>
 
           <div className=" flex items-center space-x-3 bg-blue-400 text-sm font-bold py-2 px-10 rounded-md text-black hover:transition-all duration-200 ease-linear hover:rounded-3xl hover:bg-[#E39400] hover:text-white">

@@ -9,7 +9,7 @@ const Elevate = () => {
           Transport And Logistics Operation.
         </h1>
         <button className="bg-[#E39400] text-sm font-bold py-2 px-5 rounded-md text-black hover:transition-all duration-200 ease-linear hover:rounded-3xl hover:bg-[#E39400] hover:text-white">
-          Take Your next step wiyh us
+          Take Your next step with us
         </button>
       </div>
 
