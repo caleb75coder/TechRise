@@ -45,8 +45,7 @@ const Cars = () => {
         <div className=" px-1 flex flex-col justify-center items-center">
           <h1 className="text-2xl font-bold">Airport Trips</h1>
           <p className="">
-            Book your stress-free and comfortable trip at an affortable price,
-            with service from our seasined staff today
+            Book your stress-free and comfortable trip at an affortable price.
           </p>
         </div>
         <button
@@ -66,8 +65,7 @@ const Cars = () => {
         </div>
         <h1 className="text-2xl font-bold">City Rides</h1>
         <p className="">
-          Get around the city at your convenience anytime anywhere. we are just
-          an order away from you{" "}
+          Get around the city at your convenience anytime anywhere.
         </p>
         <button
           onClick={handleAirportCity}
@@ -84,10 +82,10 @@ const Cars = () => {
             alt=""
           />
         </div>
-        <h1 className="text-2xl font-bold">Car Hair</h1>
+        <h1 className="text-2xl font-bold">Car Hire</h1>
         <p className="">
-          Get around the city at your convenience anytime, anywhere. we are just
-          an order away from you
+          offers exotic cars, executive vehicle tailored for attending
+          ceremonies &  other events.
         </p>
         <button
           onClick={handlecar}
@@ -104,9 +102,9 @@ const Cars = () => {
             alt=""
           />
         </div>
-        <h1 className="text-2xl font-bold">Couier Services</h1>
+        <h1 className="text-2xl font-bold">Courier Services</h1>
         <p className="">
-          Intown and intercity courier services with superfast delivry
+          Intown and intercity courier services with superfast delivry.
         </p>
         <button
           onClick={handlecourier}
@@ -125,7 +123,7 @@ const Cars = () => {
         </div>
         <h1 className="text-2xl font-bold">Driver Hire</h1>
         <p className="">
-          Hire our Driver to work for you or to your destination
+          Hire our Driver to work for you or to your destination.
         </p>
         <button
           onClick={handledrivelearn}
@@ -144,10 +142,7 @@ const Cars = () => {
         </div>
 
         <h1 className="text-2xl font-bold">Invest</h1>
-        <p className="mb-4">
-          It is also a opportunity for and Investment to get good benefits as
-          your our App
-        </p>
+        <p className="mb-4">Invest in car ownership and reap your dividends.</p>
         <button
           onClick={handleinvsign}
           className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md hover:rounded-3xl hover:transition-all duration-300 hover:scale-110 ease-linear  hover:bg-[#E48400]">

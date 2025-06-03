@@ -47,7 +47,7 @@ function Footer() {
 
         <section className="flex flex-col space-x-3 w-[60%] px-2 pr-4 py-2">
           <div className=" flex justify-between  space-x-2  py-3">
-            {/* <button  className="font-bold  text-md">Back to the top</button> */}
+            <button className="font-bold  text-md">Back to the top</button>
           </div>
           <div className=" lg:flex flex-row  justify-between">
             <nav className="flex flex-col text-sm ">
