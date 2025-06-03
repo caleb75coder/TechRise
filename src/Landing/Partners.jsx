@@ -5,7 +5,7 @@ const Partners = () => {
     <main className="flex flex-col justify-center items-center space-y-4 w-[100%] ">
       <section className="text-center text-[#130741] ">
         <h1 className="headings ">Our Partners</h1>
-        <p className="text-lg ">
+        <p>
           We work hand in hand with leading automative, finance and logistics
           partner to deliver reliable nd efficient services across the country.
         </p>

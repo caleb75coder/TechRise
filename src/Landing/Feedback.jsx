@@ -3,7 +3,9 @@ import FeedbackProps from "./Feedbackprops";
 export default function Feedback() {
   return (
     <main>
-      <div className="headings">Our Feedback</div>
+      <div className="headings flex justify-center items-center">
+        Our Feedback
+      </div>
       <section className="flex justify-center  w-[100%] items-center py-10">
         <section className="flex md:flex-row flex-col md:space-x-10 md:items-center h-[80%] space-y-10 md:space-y-0">
           <FeedbackProps

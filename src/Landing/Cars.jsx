@@ -122,9 +122,7 @@ const Cars = () => {
           />
         </div>
         <h1 className="text-2xl font-bold">Driver Hire</h1>
-        <p className="">
-          Hire our Driver to work for you or to your destination.
-        </p>
+        <p className="">Hire our driver to drive you to your destination</p>
         <button
           onClick={handledrivelearn}
           className="bg-[#E39400] text-sm font-bold py-3 px-5 rounded-md hover:rounded-3xl hover:transition-all duration-300 hover:scale-110 ease-linear hover:bg-[#E48400]">
