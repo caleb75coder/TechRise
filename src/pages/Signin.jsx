@@ -59,12 +59,12 @@ export default function Signin() {
   };
 
   return (
-    <main className="mx-auto md:w-[30%] w-[80%]  my-[5%]">
-      <h1 className=" text-[#130741] text-3xl font-medium mb-8">Welcome!</h1>
+    <main className="mx-auto md:w-[30%] w-[80%]  my-[5%] h-full">
+      <h1 className=" text-[#130741] text-3xl font-medium mb-2">Welcome!</h1>
       <img src="/Plogo.jpg" alt="logo" />
-      <section className="mt-16 text-[#130741]">
-        <h1 className="text-xl mb-4">Sign up</h1>
-        <form className="space-y-5" onSubmit={handleSubmit(submitFn)}>
+      <section className="mt-2 text-[#130741]">
+        <h1 className="headings text-xl mb-4">Sign up</h1>
+        <form className="space-y-2" onSubmit={handleSubmit(submitFn)}>
           <div>
             <label>Email</label>
             <div className="inputDiv">
@@ -125,40 +125,38 @@ export default function Signin() {
           </div>
 
           <div>
-            <div className="flex space-x-4">
-              <input
-                type="checkbox"
-                className=" w-5 h-5 "
-                {...register("checkbox")}
-              />
+            <div className="flex space-x-4 items-center">
+              <input type="checkbox" {...register("checkbox")} />
               <p>I agree to all companies Term and conditions</p>
             </div>
             <p className="error text-red-700">{errors.checkbox?.message}</p>
           </div>
-          <div className="flex justify-between mt-14 items-center">
+          <div className="flex mt-5 items-center justify-center  ">
             <button
               // onClick={handlesign}
-              className="font-medium px-6 py-2 rounded-md bg-[#E39400] hover:rounded-3xl hover:transition-all duration-300 ease-linear hover:bg-[#E48400]">
+              className="font-medium px-8 py-2 rounded-md bg-[#E39400] w-[100%]">
               Sign up
             </button>
-            <h1 onClick={handlehave} className="cursor-default">
-              Have an account?
-            </h1>
           </div>
-        </form>
-
-        <div className=" flex items-center  justify-between">
-          <div className="flex justify-center items-center py-5 font-bold">
-            <h1 className="cursor-default">or sign in with</h1>
+          <div className="flex justify-center items-center  ">
+            <h1 className="">OR</h1>
           </div>
 
-          <div className=" flex items-center space-x-3 bg-blue-400 text-sm font-bold py-2 px-10 rounded-md text-black hover:transition-all duration-200 ease-linear hover:rounded-3xl hover:bg-[#E39400] hover:text-white">
+          <div className=" flex items-center justify-center space-x-3  bg-blue-400 text-sm font-bold py-2 px-10 rounded-md text-black hover:transition-all duration-200 ease-linear hover:rounded-3xl hover:bg-[#E39400] hover:text-white">
             <span className="text-lg text-red-600 ">
               <FaGoogle />
             </span>
-            <p>Google</p>
+            <p>Sign up with Google</p>
           </div>
-        </div>
+
+          <div className="flex justify-center items-center py-3  space-x-2 bg-gray-100 rounded-xl">
+            <h1 className="cursor-default">I'm a member ?</h1>
+            <h1 onClick={handlehave} className="text-[#E39400] cursor-default">
+              {" "}
+              Login{" "}
+            </h1>
+          </div>
+        </form>
       </section>
         
     </main>

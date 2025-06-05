@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { NavLink, useNavigate } from "react-router-dom";
+import { FaGoogle } from "react-icons/fa6";
 
 export default function Login() {
   const schema = Yup.object().shape({
@@ -32,6 +33,7 @@ export default function Login() {
     setTimeout(() => {
       navigate("/");
     }, 900);
+    window.localStorage.setItem("isLogedIn", true);
   };
   const [visible, setVisible] = useState(false);
   const showPassword = () => {
@@ -47,10 +49,10 @@ export default function Login() {
 
   return (
     <main className="mx-auto md:w-[30%] w-[80%]  my-[5%]">
-      <h1 className=" text-[#130741] text-3xl font-medium mb-8">Welcome!</h1>
+      <h1 className=" text-[#130741] text-3xl font-medium mb-2">Welcome!</h1>
       <img src="/Plogo.jpg" alt="logo" />
       <section className="mt-16 text-[#130741]">
-        <h1 className="text-xl mb-4">Log in</h1>
+        <h1 className="headings text-xl mb-4">Log in</h1>
         <form className="space-y-5" onSubmit={handleSubmit(submitFn)}>
           <div>
             <label>Username</label>
@@ -83,18 +85,40 @@ export default function Login() {
           </div>
 
           <div className="flex items-center justify-between">
-            <h1 onClick={handleCreate} className="cursor-default">
-              Create account
-            </h1>
+            <div className="flex items-center justify-between space-x-2 ">
+              <input type="checkbox" />
+              <h1>Remenber me </h1>
+            </div>
             <h1 className="cursor-default">Forgot password</h1>
           </div>
 
-          <div className="flex justify-between mt-14 items-center">
+          <div className="flex mt-5 items-center justify-center  ">
             <button
               // onClick={handlesign}
-              className="font-medium px-8 py-3 rounded-md bg-[#E39400]">
+              className="font-medium px-8 py-2 rounded-md bg-[#E39400] w-[100%]">
               Log in
             </button>
+          </div>
+
+          <div className="flex justify-center items-center  ">
+            <h1 className="">OR</h1>
+          </div>
+
+          <div className=" flex items-center justify-center space-x-3  bg-blue-400 text-sm font-bold py-2 px-10 rounded-md text-black hover:transition-all duration-200 ease-linear hover:rounded-3xl hover:bg-[#E39400] hover:text-white">
+            <span className="text-lg text-red-600 ">
+              <FaGoogle />
+            </span>
+            <p>Login with Google</p>
+          </div>
+
+          <div className="flex justify-center items-center py-3  space-x-2 bg-gray-100 rounded-xl">
+            <h1>New to Konacuv ?</h1>
+            <h1
+              onClick={handleCreate}
+              className="text-[#E39400] cursor-default ">
+              {" "}
+              Create account
+            </h1>
           </div>
         </form>
       </section>

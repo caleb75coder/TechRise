@@ -52,7 +52,13 @@ const Header = () => {
     setVisible(!Visible);
   };
 
+  window.localStorage.removeItem("isLogedIn");
+  const handleLogout = () => {
+    navigate("/signin");
+  };
+
   const location = useLocation();
+
   return (
     <header className="fixed  top-0 left-0 w-[100%] z-50 bg-white">
       <section className="flex  shadow-md shadow-gray-700 items-center justify-between    text-[#130741] lg:px-5 px-5 py-4 w-[100%] ">
@@ -83,7 +89,7 @@ const Header = () => {
             </div>
             <div
               className={`flex flex-col mt-10  fixed rounded-lg px-5   bg-amber-50 opacity-90  space-y-2 transition-all duration-500 ease-out overflow-hidden ${
-                Visible ? "max-h-[40vh] py-4 " : "max-h-0"
+                Visible ? "max-h-[50vh] py-4 " : "max-h-0"
               } `}
               onClick={() => {
                 setVisible(false);
@@ -99,6 +105,11 @@ const Header = () => {
               </button>
               <button onClick={handletrack} className="more1">
                 Track your package
+              </button>
+              <button
+                onClick={handleLogout}
+                className="bg-[#E39400]  text-white px-7 hover:transition-all duration-500 ease-linear hover:bg-white border   hover:border-[#E39400] hover:text-[#E39400]">
+                Logout
               </button>
             </div>
           </div>
@@ -177,11 +188,11 @@ const Header = () => {
             <button onClick={handleReturn} className="text-[#130741] ">
               Become a Driver
             </button>
-            {/* <button
-              onClick={handlesign}
-              className="bg-[#E39400] px-14 text-white w-[90%] flex items-center justify-center">
-              Signin
-            </button> */}
+            <button
+              onClick={handleLogout}
+              className="bg-[#E39400]  text-white px-7 hover:transition-all duration-500 ease-linear hover:bg-white border   hover:border-[#E39400] hover:text-[#E39400]">
+              Logout
+            </button>
           </div>
         </nav>
       </section>

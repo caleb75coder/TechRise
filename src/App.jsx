@@ -28,6 +28,7 @@ import BookARide from "./pages/BookARide";
 import YourRide from "./pages/YourRide";
 
 function App() {
+  // const Login = window.localStorage.setItem("isLogedIn");
   return (
     <>
       <Routes>
@@ -38,8 +39,6 @@ function App() {
           <Route path="/invest" element={<Invest />} />
           <Route path="/services" element={<Services />} />
           <Route path="/becomeADriver" element={<BecomeADriver />} />
-          <Route path="/signin" element={<Signin />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/investorsig" element={<Investorsig />} />
           <Route path="/investoeborad" element={<Investoeborad />} />
           <Route path="/driversign" element={<Driversign />} />
@@ -57,6 +56,8 @@ function App() {
           <Route path="bookARide" element={<BookARide />} />
           <Route path="/yourRide" element={<YourRide />} />
         </Route>
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/login" element={<Login />} />
 
         <Route path="*" element={<Notfound />} />
       </Routes>
