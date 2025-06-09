@@ -23,6 +23,12 @@ const Header = () => {
     }, 800);
   };
 
+  const handllogin = () => {
+    setTimeout(() => {
+      navigate("/login");
+    }, 700);
+  };
+
   const handleinvsign = () => {
     setTimeout(() => {
       navigate("investorsig");
@@ -61,7 +67,7 @@ const Header = () => {
 
   return (
     <header className="fixed  top-0 left-0 w-[100%] z-50 bg-white">
-      <section className="flex  shadow-md shadow-gray-700 items-center justify-between    text-[#130741] lg:px-5 px-5 py-4 w-[100%] ">
+      <section className="flex  shadow-md shadow-gray-700 items-center justify-between    text-[#130741] lg:px-5 px-2 py-4 w-[100%] ">
         <div>
           <img src="Kunacuv.png" alt="" />
         </div>
@@ -116,7 +122,7 @@ const Header = () => {
 
           <button
             onClick={handleReturn}
-            className="text-[#130741]  px-2     hover:transition-all duration-500 ease-linear hover:bg-[#E39400] hover:text-white">
+            className="text-[#130741]  px-2  hover:transition-all duration-500 ease-linear hover:bg-[#E39400] hover:text-white">
             Become a Driver
           </button>
           <button
@@ -127,11 +133,16 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center justify-between space-x-4">
-          <div className="flex lg:hidden">
+          <div className="flex lg:hidden space-x-2">
+            <button
+              onClick={handllogin}
+              className="bg-white border-2  text-sm font-bold py-2 px-5 rounded-xl text-black hover:transition-all duration-200 ease-linear hover:rounded-3xl hover:bg-[#E39400] border-[#E39400] hover:text-white">
+              Login
+            </button>
             <button
               onClick={handlesign}
-              className="bg-[#E39400] px-4 py-1 font-medium rounded-2xl text-white  flex items-center justify-center">
-              Sign up
+              className="bg-white border-2  text-sm font-bold py-2 px-5 rounded-xl text-black hover:transition-all duration-200 ease-linear hover:rounded-3xl hover:bg-[#E39400] border-[#E39400] hover:text-white">
+              Signup
             </button>
           </div>
           <div

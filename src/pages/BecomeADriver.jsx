@@ -32,7 +32,7 @@ const BecomeADriver = () => {
         </div>
 
         <div className="w-[100%]  lg:flex  flex-row space-y-2 items-center px-5 space-x-2 mb-20">
-          <div className=" border-2 border-black lg:w-[33%] w-[100%] flex flex-col  items-center space-y-8 px-1 rounded-2xl">
+          <div className=" border-2 border-black lg:w-[33%] w-[100%] flex flex-col  items-center space-y-8 px-1 py-2 rounded-2xl">
             <h1 className="text-[#130741] font-bold text-xl">
               Drive and earn when you like
             </h1>
@@ -42,7 +42,7 @@ const BecomeADriver = () => {
             </p>
           </div>
 
-          <div className=" border-2 border-black lg:w-[33%] w-[100%]  flex flex-col  items-center space-y-8 px-1 rounded-2xl">
+          <div className=" border-2 border-black lg:w-[33%] w-[100%]  flex flex-col  items-center space-y-8 px-1 py-2 rounded-2xl">
             <h1 className="text-[#130741] font-bold text-xl">
               A reliable source of income
             </h1>
@@ -52,7 +52,7 @@ const BecomeADriver = () => {
             </p>
           </div>
 
-          <div className=" border-2 border-black lg:w-[33%] w-[100%]  flex flex-col  items-center space-y-3 px-1 rounded-2xl">
+          <div className=" border-2 border-black lg:w-[33%] w-[100%]  flex flex-col  items-center space-y-3 px-1 py-2 rounded-2xl">
             <h1 className="text-[#130741] font-bold text-xl">Weekly payout </h1>
             <p>
               Receive your earning at the end of the week. There are no hidden
