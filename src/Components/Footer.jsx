@@ -104,7 +104,7 @@ function Footer() {
           <nav className="flex justify-between items-center text-white text-sm space-x-5">
             <a
               className="bg-[#E39400] text-sm font-bold py-2 px-5 rounded-md text-black hover:transition-all duration-200 ease-linear hover:rounded-3xl hover:bg-[#E39400] hover:text-white"
-              href="./login">
+              href="/login">
               Login
             </a>
             <a href="">Terms of use</a>
