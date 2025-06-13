@@ -110,7 +110,7 @@ const CourierLearn = () => {
 
         <div className="space-y-1 px-1 text-black font mb-5">
           {CourierFAQ.map((anyname, index) => (
-            <div className="text-black font-medium">
+            <div key={index} className="text-black font-medium">
               <div
                 className="flex justify-between items-center  px-2 py-3 space-x-2 bg-gray-300  mb-0.5 cursor-pointer"
                 onClick={() => handlecClick(index)}>

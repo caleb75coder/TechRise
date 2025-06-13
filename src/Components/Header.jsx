@@ -78,7 +78,7 @@ const Header = () => {
               to={list.path}
               className={`${
                 location.pathname === list.path
-                  ? "text-[#E39400]  border border-[#E39400] px-3 rounded-lg transition-all duration-900  ease-out py-1"
+                  ? "text-[#E39400]  border-2 border-[#E39400] px-3 rounded-xl transition-all  translate-1.5   duration-900  ease-out py-1"
                   : "text-[#130741]"
               }`}>
               {list.title}
@@ -136,12 +136,12 @@ const Header = () => {
           <div className="flex lg:hidden space-x-2">
             <button
               onClick={handllogin}
-              className="bg-white border-2  text-sm font-bold py-2 px-5 rounded-xl text-black hover:transition-all duration-200 ease-linear hover:rounded-3xl hover:bg-[#E39400] border-[#E39400] hover:text-white">
+              className="bg-white border-2  text-sm font-bold py-2 px-5 rounded-xl text-black hover:transition-all duration-200 ease-linear hover:rounded-3xl border-[#E39400] ">
               Login
             </button>
             <button
               onClick={handlesign}
-              className="bg-white border-2  text-sm font-bold py-2 px-5 rounded-xl text-black hover:transition-all duration-200 ease-linear hover:rounded-3xl hover:bg-[#E39400] border-[#E39400] hover:text-white">
+              className=" border-2  text-sm font-bold py-2 px-5 rounded-xl text-black hover:transition-all duration-200 ease-linear hover:rounded-3x bg-[#E39400] border-[#E39400] ">
               Signup
             </button>
           </div>

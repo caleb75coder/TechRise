@@ -16,6 +16,10 @@ function Footer() {
       navigate("/register");
     });
   };
+
+  // const handlelogiin = () => {
+  //   setTimeout(() => {});
+  // };
   return (
     <main className="bg-[#0f0448] py-2 ">
       <div className="px-5">
